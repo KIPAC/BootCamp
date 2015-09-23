@@ -47,15 +47,15 @@ This generally involves two steps: (1) start a notebook instance on the remote m
 
 ### Is there a simpler way?
 
-    You can combine the two steps into one:
+You can combine the two steps into one:
 
-    ```
-    ssh -t -L 8887:localhost:12345 <user>@<server> "jupyter-notebook --no-browser --notebook-dir=<your notebook dir> --port-retries=0 --port=12345"
-    ```
+```
+ssh -t -L 8887:localhost:12345 <user>@<server> "jupyter-notebook --no-browser --notebook-dir=<your notebook dir> --port-retries=0 --port=12345"
+```
 
-    You may want to change the number "12345" to something else if you are not the only person using the remote machine. (Note that this number appears twice in the above command.)
+You may want to change the number "12345" to something else if you are not the only person using the remote machine. (Note that this number appears twice in the above command.)
 
-    Another choice is to run the notebook instance at a public-facing address, so that the second step can be omitted. However, you **MUST** secure your connection to the remote instance with SSL and also use password to protect your notebook. The instruction can be found [here](http://ipython.org/ipython-doc/3/notebook/public_server.html). 
+Another choice is to run the notebook instance at a public-facing address, so that the second step can be omitted. However, you **MUST** secure your connection to the remote instance with SSL and also use password to protect your notebook. The instruction can be found [here](http://ipython.org/ipython-doc/3/notebook/public_server.html). 
 
     
 ## Notebook Extensions
