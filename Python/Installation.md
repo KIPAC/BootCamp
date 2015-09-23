@@ -48,7 +48,7 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
     conda update conda
     conda update --all
     conda install numpy scipy matplotlib ipython jupyter pandas astropy scikit-learn
-    conda install mkl  # (only if you did Step 2)
+    conda install mkl  # (only if you did Step 1)
     ```
    
 6.  Some additional packages need to be install via `pip`, for example:
