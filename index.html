@@ -34,7 +34,7 @@
   .sep a:hover{
     color: #FFF;
   }
-  .register{
+  .register, .repo{
     color: #0CB0FF !important;
     background: #FFF;
     margin: 1.5em auto 0.5em auto;
@@ -43,6 +43,10 @@
     font-weight: bold;
     border-radius: 15px;
     width: 6em;
+  }
+  .register{
+    display: none;
+  }
   }
   .details .register{
     color: #FFF !important;
@@ -103,6 +107,7 @@
   <h1>KIPAC Computing Boot Camp</h1>
   <h3>Stanford/SLAC, September 23-25, 2015</h3>
   <a class="pure-button register" href="https://docs.google.com/forms/d/1S786LnTWnZ7hSRx2uSTqjwetF-GwLjOvdv2AZ_uPiDE/viewform">Register</a>
+  <a class="pure-button repo" href="https://github.com/KIPAC/BootCamp">GitHub Repo</a>
   <p class="note">(<a href="#details">details</a>)</p>
 </header>
 
@@ -116,12 +121,12 @@
         </div>
         <div class="card">
           <span class="time">1:30 - 2:15 pm</span>
-          <span class="topic"><a href="https://github.com/KIPAC/BootCamp/blob/master/Unix/Unix%20(1).ipynb">Unix (1)</a>: overview, basic commands, SSH</span>
+          <span class="topic"><a href="https://github.com/KIPAC/BootCamp/tree/master/Unix">Unix</a> <a href="https://github.com/KIPAC/BootCamp/blob/master/Unix/Unix%20(1).ipynb">(1)</a>: overview, basic commands, SSH</span>
           <span class="lectuer">Yao-Yuan Mao</span>
         </div>
         <div class="card">
           <span class="time">2:15 - 3:00 pm</span>
-          <span class="topic"><a href="https://github.com/KIPAC/BootCamp/tree/master/Python">Python (1)</a>: environment setup, ipython, jupyter notebooks</span>
+          <span class="topic"><a href="https://github.com/KIPAC/BootCamp/tree/master/Python">Python</a> <a href="https://github.com/KIPAC/BootCamp/blob/master/Python/Python%20(1).ipynb">(1)</a>: environment setup, ipython, jupyter notebooks</span>
           <span class="lectuer">Yao-Yuan Mao</span>
         </div>
       </div>
@@ -200,6 +205,7 @@
 
 <div class="content details">
   <ul>
+    <li>Boot camp materials can be found at <a href="https://github.com/KIPAC/BootCamp">the GitHub repository</a>.</li>
     <li>Yes, you're invited no matter whether you're an incoming student, postdoc, faculty, or if you have been with KIPAC for a while! And yes, you can just go to the sessions that you're interested in.</li>
     <li>No, <b>no background in Unix or Python is required</b>. You are <i>very encouraged</i> to attend the sessions on Wed and Thur if you are not familiar with Unix or Python.</li>
     <li>We will try to make these sessions as hands-on as possible, so <b>bring your laptop</b> to the sessions.</li>
