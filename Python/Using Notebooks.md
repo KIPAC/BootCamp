@@ -7,15 +7,20 @@ Open your browser and visit [this website](https://try.jupyter.org/).
 
 ## Start a notebook running on your local machine
 
-Open a terminal and run
+1.  Open a terminal, change the working directory to the directory where you want to start a notebook session.
 
-```
-jupyter-notebook
-```
+    If you use Windows, open a file explorer and browse to the directory where you want to start a notebook session, press `shift` and right click the explorer window and select "open command window here". 
 
-This will fire up your browser and point you to the running notebook server.
 
-Note: if you have an older version of ipython (<= 3.x), replace `jupyter-notebook` with `ipython-notebook`.
+2.  In the termial, type
+
+    ```
+    jupyter notebook
+    ```
+
+    This will fire up your browser and point you to the running notebook server. Do not close this terminal. To quit the notebook server, press `Ctrl`+`c` twice.
+
+    Note: if you have an older version of ipython (<= 3.x), replace `jupyter notebook` with `ipython notebook`.
 
 
 ## Start a notebook running on a remote machine
@@ -40,7 +45,7 @@ This generally involves two steps: (1) start a notebook instance on the remote m
     
     The remote server needs to be the same machine as in Step 1, and the second number (after "localhost") also needs to be the same number as the one you saw in Step 1. 
 
-    Open your browser and connet to http://localhost:8887/
+    Open your browser and connet to `http://localhost:8887/`
 
     (If you use Windows, find the option "Port Forwarding" in SecureCRT or "SSH Tunnel" in PuTTY. You need to set up a local port forwarding from port 8887 to localhost:8889.)
 
