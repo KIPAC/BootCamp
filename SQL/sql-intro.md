@@ -344,15 +344,40 @@ we also implicitly did by creating the `FOREIGN KEY` relationship.
 But what if we want to quickly find all high energy events in the
 `Event` table?
 
+First off, let's see how it will execute:
+
+```sql
+EXPLAIN QUERY PLAN SELECT * FROM Event WHERE energy > 1e17;
+```
+
+We get:
+```bash
+0|0|0|SCAN TABLE Event
+```
+
+This implies a full table scan, so each time we search the database, we read the *entire* table. That's not efficient.
+
+Let's create an index:
+
 ```sql
 CREATE INDEX idx_evtEnergy ON Event(Energy);
 ```
+
+We get the following:
+
+```bash
+0|0|0|SEARCH TABLE Event USING INDEX idx_evtEnergy (energy>?)
+```
+
+If our event energies were gaussian and we were performing a search for the top 2% of events, the index would allow us to skip reading nearly 98% of the table.
 
 Indexes are really powerful, but they have a storage cost and an
 update cost to them, so it's not necessarily useful to create them
 everywhere. The reason why they are typically created on `PRIMARY KEY`
 and `FOREIGN KEY` relationships is because it's assumed a user may want
 to do a `JOIN` with them.
+
+You can 
 
 ## Transactions
 
