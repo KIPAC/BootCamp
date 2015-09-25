@@ -21,3 +21,11 @@
   * edit the file(s) and *commit* your changes to make a new version,
   * then *push* those changes back to your fork - and then
   * ask for those improvements to be merged into the base repository by submitting a *pull request*.
+
+  * You might even need to *add* a new file.
+
+* As the FAQ evolves, you'll want to keep up with the latest version.
+
+  * Add a new *remote*, the *base repository* and then
+  * *pull* the changes down from that remote, and
+  * fix any *conflicts* that arise.
