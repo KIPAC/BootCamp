@@ -369,7 +369,8 @@ We get the following:
 0|0|0|SEARCH TABLE Event USING INDEX idx_evtEnergy (energy>?)
 ```
 
-If our event energies were evently distributed and we were performing a search for the top 2% of events, the index could allow us to skip reading nearly 98% of the table.
+If our event energies were evenly distributed and we were performing a 
+search for the top 2% of events, the index could allow us to skip reading nearly 98% of the table.
 
 Indexes are really powerful, but they have a storage cost and an
 update cost to them, so it's not necessarily useful to create them
