@@ -9,7 +9,7 @@
 
 -----
 
-### Task: Improve Phil's Git and GitHub tutorial
+### Task: Improve Phil's "Getting Started with Git and GitHub" FAQ
 
 * The FAQ in the [test repository](https://github.com/drphilmarshall/GettingStarted) is being developed collaboratively as an open source project.
 
