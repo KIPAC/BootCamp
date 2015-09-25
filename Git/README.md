@@ -27,6 +27,6 @@
 
 * As the FAQ evolves, you'll want to keep up with the latest version.
 
-  * Add a new *remote*, the *base repository* and then
+  * Add a new *remote*, a link to the *base repository* and then
   * *pull* the changes down from that remote, and
   * fix any *conflicts* that arise.
