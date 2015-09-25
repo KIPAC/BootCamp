@@ -63,6 +63,10 @@ and they disappear on the clean exit of SQLite.
 The next parts of the tutorial will assume you stay in this prompt.
 To exit out of the prompt, you can hit Ctrl-D.
 
+Note: There are some parallel examples in sql-intro.py if you can't get
+a SQLite prompt to work.
+
+
 ### Schema, Tables, Columns and Rows
 
 Databases are primarily composed of *tables*. Tables are typically
