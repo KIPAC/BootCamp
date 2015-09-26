@@ -63,6 +63,10 @@ and they disappear on the clean exit of SQLite.
 The next parts of the tutorial will assume you stay in this prompt.
 To exit out of the prompt, you can hit Ctrl-D.
 
+Note: There are some parallel examples in sql-intro.py if you can't get
+a SQLite prompt to work.
+
+
 ### Schema, Tables, Columns and Rows
 
 Databases are primarily composed of *tables*. Tables are typically
@@ -344,9 +348,33 @@ we also implicitly did by creating the `FOREIGN KEY` relationship.
 But what if we want to quickly find all high energy events in the
 `Event` table?
 
+First off, let's see how it will execute:
+
+```sql
+EXPLAIN QUERY PLAN SELECT * FROM Event WHERE energy > 1e17;
+```
+
+We get:
+```bash
+0|0|0|SCAN TABLE Event
+```
+
+This implies a full table scan, so each time we search the database, we read the *entire* table. That's not efficient.
+
+Let's create an index:
+
 ```sql
 CREATE INDEX idx_evtEnergy ON Event(Energy);
 ```
+
+We get the following:
+
+```bash
+0|0|0|SEARCH TABLE Event USING INDEX idx_evtEnergy (energy>?)
+```
+
+If our event energies were evenly distributed and we were performing a 
+search for the top 2% of events, the index could allow us to skip reading nearly 98% of the table.
 
 Indexes are really powerful, but they have a storage cost and an
 update cost to them, so it's not necessarily useful to create them
