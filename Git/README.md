@@ -4,7 +4,13 @@
 
 * We will go through what `git` does, what GitHub provides and enables, and step through the process of getting set up to contribute to a project hosted on GitHub.
 
-* A video of this tutorial can be found [on YouTube ](https://www.youtube.com/watch?v=2g9lsbJBPEs).
+* You will need:
+  * A GitHub account
+  * The `git` program working on the command line. 
+
+> `git` comes free with the Mac XCode package, for example. You can also learn how to install it for your operating system from the web.
+
+* A video showing many parts of this tutorial can be found [on YouTube ](https://www.youtube.com/watch?v=2g9lsbJBPEs).
 
 
 -----
