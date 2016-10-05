@@ -8,16 +8,16 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
 1.  (Optional) If you're academic user, request an academic license here [on this page](https://store.continuum.io/cshop/academicanaconda). 
     You should receive an email with a license file, which you'll put it under `~/.continuum`.
    
-2.  Go to [miniconda website](http://conda.pydata.org/miniconda.html) to download the correct version you need. 
-    If you are installing miniconda in the linux/unix machine (like on the remote server), you can start the installation process by running:
+2.  Go to [miniconda website](http://conda.pydata.org/miniconda.html) to download the correct version for your operating system. 
+    If you are installing miniconda on a linux/unix machine (like on the remote server), you can start the installation process by running:
     
     ``` 
     bash Miniconda-latest-Linux-x86_64.sh
     ```
     
-    Follow the installation instruction.
+    Follow the installation instructions on the miniconda website.
    
-3.  Open a text editor to append the following line to your `~/.bashrc`, `~/.bash_profile`, or `~/.cshrc` file.
+3.  Open a text editor to append the following line to your `~/.bashrc`, `~/.bash_profile`, or `~/.cshrc` or `~/.profile (for OS X) file.
    
     ```
     # If using bash
@@ -34,13 +34,13 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
     echo 'setenv PATH "$HOME/miniconda/bin:$PATH"' >> ~/.cshrc
     ```
     
-    Once this is done, source your `~/.bashrc`, `~/.bash_profile`, or `~/.cshrc`. For example:
+    Once this is done, source your `~/.bashrc`, `~/.bash_profile`, `~/.cshrc`, or `~/.profile` file. For example:
    
     ```
     source ~/.bashrc
     ```
  
-4.  Make sure the installation is sucessful by check your python executable path:
+4.  Make sure the installation was successful by checking your python executable path:
 
     ```
     which python
@@ -56,7 +56,7 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
     conda install mkl  # (only if you did Step 1)
     ```
 
-6.  Some additional packages need to be install via `pip`, for example:
+6.  Some additional packages need to be installed via `pip`, for example:
     
     ```
     pip install healpy
