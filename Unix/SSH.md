@@ -1,10 +1,10 @@
 # Connect to servers with SSH
 
-Here I use Stanford's server `cardinal` as an example. You can use the same procedure to connect to other servers, like the SLAC servers, too.
+Here I use Stanford's server `cardinal` as an example. You can use the same procedure to connect to other servers, like the SLAC servers.
 
 ## If you are using Windows:
 
-If you have an active SUNet ID, visit [this page](https://itservices.stanford.edu/service/ess/pc/securecrt) to download and install SecureCRT. Follow the instructusion on [this page](https://itservices.stanford.edu/service/ess/pc/docs/securecrt) to connect to `cardinal.stanford.edu`. Use your SUNet ID to log in.
+If you have an active SUNet ID, visit [this page](https://itservices.stanford.edu/service/ess/pc/securecrt) to download and install SecureCRT. Follow the instructions on [this page](https://itservices.stanford.edu/service/ess/pc/docs/securecrt) to connect to `cardinal.stanford.edu`. Use your SUNet ID to log in.
 
 If you don't have an active SUNet ID, please download PuTTY from [this page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). You will need at least `putty.exe`.
 
