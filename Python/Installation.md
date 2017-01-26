@@ -8,30 +8,30 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
 1.  (Optional) If you're academic user, request an academic license here [on this page](https://store.continuum.io/cshop/academicanaconda). 
     You should receive an email with a license file, which you'll put it under `~/.continuum`.
    
-2.  Go to [miniconda website](http://conda.pydata.org/miniconda.html) to download the correct version for your operating system. 
-    If you are installing miniconda on a linux/unix machine (like on the remote server), you can start the installation process by running:
+2.  Go to [miniconda website](http://conda.pydata.org/miniconda.html) to download the version corresponding to your operating system. 
+    If you are installing miniconda on a linux/unix machine (like on the remote server), you can start the installation process by running (assuming Python 2 here):
     
     ``` 
-    bash Miniconda-latest-Linux-x86_64.sh
+    bash Miniconda2-latest-Linux-x86_64.sh
     ```
     
     Follow the installation instructions on the miniconda website.
    
-3.  Open a text editor to append the following line to your `~/.bashrc`, `~/.bash_profile`, or `~/.cshrc` or `~/.profile (for OS X) file.
+3.  Open a text editor to append the following line to your `~/.bashrc`, `~/.bash_profile`, or `~/.cshrc` or `~/.profile` (for OS X) file.
    
     ```
     # If using bash
-    export PATH="$HOME/miniconda/bin:$PATH"
+    export PATH="$HOME/miniconda2/bin:$PATH"
  
     # If using (t)csh
-    setenv PATH "$HOME/miniconda/bin:$PATH"
+    setenv PATH "$HOME/miniconda2/bin:$PATH"
     ```
     
     If you are on a remote server and do not know how to edit a text file, you can run (for the csh case):
 
     ```
     cp ~/.cshrc ~/.cshrc.bak
-    echo 'setenv PATH "$HOME/miniconda/bin:$PATH"' >> ~/.cshrc
+    echo 'setenv PATH "$HOME/miniconda2/bin:$PATH"' >> ~/.cshrc
     ```
     
     Once this is done, source your `~/.bashrc`, `~/.bash_profile`, `~/.cshrc`, or `~/.profile` file. For example:
@@ -52,8 +52,8 @@ Python at KIPAC can be a bit tricky, but the steps below, using [miniconda](http
     ```
     conda update conda
     conda update --all
-    conda install numpy scipy matplotlib ipython jupyter pandas astropy scikit-learn
-    conda install mkl  # (only if you did Step 1)
+    conda install future six
+    conda install numpy scipy matplotlib ipython jupyter pandas astropy scikit-learn cython h5py
     ```
 
 6.  Some additional packages need to be installed via `pip`, for example:
