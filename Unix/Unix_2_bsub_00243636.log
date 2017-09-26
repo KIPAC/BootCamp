@@ -1,0 +1,38 @@
+Hello there! Good job opening this file!
+
+------------------------------------------------------------
+Sender: LSF System <lsf@bullet0054>
+Subject: Job 482191: <dataset_testbed__name_optical__expid_00243636__entry_default> in cluster <slac> Done
+
+Job <dataset_testbed__name_optical__expid_00243636__entry_default> was submitted from host <ki-ls09> by user <cpd> in cluster <slac> at Thu Sep 21 12:05:13 2017.
+Job was executed on host(s) <2*bullet0054>, in queue <medium>, as user <cpd> in cluster <slac> at Thu Sep 21 16:09:22 2017.
+</u/ki/cpd> was used as the home directory.
+</u/ki/cpd/Projects/piff_des/tests> was used as the working directory.
+Started at Thu Sep 21 16:09:22 2017.
+Terminated at Thu Sep 21 18:12:48 2017.
+Results reported at Thu Sep 21 18:12:48 2017.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python /u/ki/cpd/Projects/piff_des/tests/run_data_fits.py --directory /u/ki/cpd/ki19/piff_test/testbed/2017.09.21/optical/00243636/default
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   7412.47 sec.
+    Max Memory :                                 4031 MB
+    Average Memory :                             449.81 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                28
+    Run time :                                   7405 sec.
+    Turnaround time :                            22055 sec.
+
+The output (if any) is above this job summary.
+
