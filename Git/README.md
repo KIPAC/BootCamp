@@ -1,6 +1,8 @@
 # Version Control and Project Management with Git and GitHub
 
-* Here's a [test repository](https://github.com/drphilmarshall/GettingStarted) hosted at GitHub.com that you can *fork* and experiment with. It contains an FAQ about `git` and GitHub that hopefully you will find useful to refer to.
+* Here's a [test repository](https://github.com/mclaughlin6464/GettingStarted) hosted at GitHub.com that you can *fork* and experiment with. It contains an FAQ about `git` and GitHub that hopefully you will find useful to refer to.
+
+* Throughout this talk I will refer to a few Git commands, and I encourage to refer to the [Git cheat sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) if you have questions.
 
 * We will go through what `git` does, what GitHub provides and enables, and step through the process of getting set up to contribute to a project hosted on GitHub.
 
@@ -15,11 +17,11 @@
 
 -----
 
-### Task: Improve Phil's "Getting Started with Git and GitHub" FAQ
+### Task: Improve Sean's "Getting Started with Git and GitHub" FAQ
 
-* The FAQ in the [test repository](https://github.com/drphilmarshall/GettingStarted) is being developed collaboratively as an open source project.
+* The FAQ in the [test repository](https://github.com/mclaughlin6464/GettingStarted) is being developed collaboratively as an open source project.
 
-* Can you see something that needs fixing or improving? If so, [post an issue](https://github.com/drphilmarshall/GettingStarted/issues)
+* Can you see something that needs fixing or improving? If so, [post an issue](https://github.com/mclaughlin6464/GettingStarted/issues)
 
 * Can you fix it yourself, even partially? If so, then:
 
@@ -30,6 +32,7 @@
   * ask for those improvements to be merged into the base repository by submitting a *pull request*.
 
   * You might even need to *add* a new file.
+  * If you're making a lot of changes, perhaps they should be in a new *branch*.
 
 * As the FAQ evolves, you'll want to keep up with the latest version.
 
