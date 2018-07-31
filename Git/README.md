@@ -41,3 +41,5 @@
   * fix any *conflicts* that arise.
  
 * If you're interested in the project long term, you'll probably want to see what *epics* are in progress, and what the *milestones* are. 
+
+Go Stanford, Beat Cal
