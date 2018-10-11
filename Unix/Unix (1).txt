@@ -1,0 +1,2321 @@
+dn2lk5kk2:Desktop jmyles$ cd
+dn2lk5kk2:~ jmyles$ slac
+Copied academic/slac to clipboard. Will clear in 45 seconds.
+jmyles@ki-ls.slac.stanford.edu's password: 
+Warning: No xauth data; using fake authentication data for X11 forwarding.
+Last login: Wed Oct 10 14:01:33 2018 from dn2lk5kk2.stanford.edu
+===============================================================================
+                                NOTICE TO USERS                                
+
+This is a Federal computer system and is the property of the United States
+Government. It is for authorized use only. Users (authorized or unauthorized)
+have no explicit or implicit expectation of privacy.
+
+Any or all uses of this system and all files on this system may be intercepted,
+monitored, recorded, copied, audited, inspected, and disclosed to authorized
+site, Department of Energy, and law enforcement personnel, as well as
+authorized officials of other agencies, both domestic and foreign.  By using
+this system, the user consents to such interception, monitoring, recording,
+copying, auditing, inspection, and disclosure at the discretion of authorized
+site or Department of Energy personnel.
+
+Unauthorized or improper use of this system may result in administrative
+disciplinary action and civil and criminal penalties.  By continuing to use
+this system you indicate your awareness of and consent to these terms and
+conditions of use.  LOG OFF IMMEDIATELY if you do not agree to the conditions
+stated in this warning.
+
+
+
+===============================================================================
+RHEL Server release 6.10 (Santiago)  2.6.32-431.29.2.el6.x86_64 (6x2199MHz KVM)
+===============================================================================
+This is ki-ls09, a member of the ki-ls pool.
+Use the pool name to request the least-loaded machine in the pool.
+
+===============================================================================
+-bash-4.1$ ls /
+Kickstart_end  boot    dev   home   lost+found	misc  nfs   root     scs      srv  u
+afs	       cern    etc   lib    lustre	mnt   opt   sbin     scswork  sys  usr
+bin	       cgroup  gpfs  lib64  media	net   proc  scratch  selinux  tmp  var
+-bash-4.1$ uname -a 
+Linux ki-ls09 2.6.32-431.29.2.el6.x86_64 #1 SMP Sun Jul 27 15:55:46 EDT 2014 x86_64 x86_64 x86_64 GNU/Linux
+-bash-4.1$ ls -la / 
+total 1170
+dr-xr-xr-x.   33 root root   4096 Sep 11 17:21 .
+dr-xr-xr-x.   33 root root   4096 Sep 11 17:21 ..
+-rw-r--r--     1 root root      0 Sep 11 17:21 .autofsck
+-rw-r--r--     1 root root      0 Sep 13  2013 .autorelabel
+drwx------     2 root root   4096 Sep 13  2013 .elinks
+-rw-r--r--     1 root bin       0 Nov 12  2013 .readahead_collect
+-rw-r--r--.    1 root root      0 Sep 13  2013 Kickstart_end
+drwxr-xr-x   401 root root  18432 Dec 31  1969 afs
+dr-xr-xr-x.    2 root root   4096 Jun 21 02:23 bin
+dr-xr-xr-x.    5 root root   4096 Aug 16 02:05 boot
+lrwxrwxrwx     1 root root     48 Sep 13  2013 cern -> /afs/slac.stanford.edu/package/cernlib/@sys/cern
+drwxr-xr-x.    2 root root   4096 Nov 28  2017 cgroup
+drwxr-xr-x    17 root root   3720 Sep 11 17:22 dev
+drwxr-xr-x.  153 root root  12288 Oct 10 15:04 etc
+drwxr-xr-x     4 root bin    4096 May  1  2015 gpfs
+drwxr-xr-x.    2 root root   4096 Jun 28  2011 home
+dr-xr-xr-x.   13 root root   4096 Jul  5 22:58 lib
+dr-xr-xr-x.   11 root root  12288 Jun 21 02:24 lib64
+drwx------.    2 root root  16384 Sep 13  2013 lost+found
+drwxr-xr-x     3 root bin    4096 Sep 18  2013 lustre
+drwxr-xr-x.    2 root root   4096 Jun 28  2011 media
+drwxr-xr-x.    2 root root   4096 May 16 17:36 misc
+drwxr-xr-x.    2 root root   4096 Jun 28  2011 mnt
+drwxr-xr-x.    2 root root   4096 May 16 17:36 net
+dr-xr-xr-x   112 root bin    4096 Mar 26  2018 nfs
+drwxr-xr-x.    8 root root   4096 Jun 24  2015 opt
+dr-xr-xr-x   523 root root      0 Sep 11 17:21 proc
+drwx------.    4 root root   4096 Jan 13  2017 root
+dr-xr-xr-x.    2 root root  12288 Sep 13 01:58 sbin
+drwxrwxrwt. 2320 root root  90112 Sep 26 00:28 scratch
+drwx------     3 scs  bin    4096 Oct  3 02:00 scs
+drwxr-xr-x.    6 root root   4096 Sep 17  2014 scswork
+drwxr-xr-x.    2 root root   4096 Sep 13  2013 selinux
+drwxr-xr-x.    2 root root   4096 Jun 28  2011 srv
+drwxr-xr-x    13 root root      0 Sep 11 17:21 sys
+drwxrwxrwt. 2090 root root 933888 Oct 10 15:08 tmp
+lrwxrwxrwx     1 root root     24 Sep 13  2013 u -> /afs/slac.stanford.edu/u
+drwxr-xr-x.   18 root root   4096 May  1  2015 usr
+drwxr-xr-x.   27 root root   4096 May  1  2015 var
+-bash-4.1$ ls -larth /
+total 1.2M
+drwxr-xr-x   401 root root  18K Dec 31  1969 afs
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 srv
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 mnt
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 media
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 home
+lrwxrwxrwx     1 root root   24 Sep 13  2013 u -> /afs/slac.stanford.edu/u
+lrwxrwxrwx     1 root root   48 Sep 13  2013 cern -> /afs/slac.stanford.edu/package/cernlib/@sys/cern
+drwx------.    2 root root  16K Sep 13  2013 lost+found
+drwxr-xr-x.    2 root root 4.0K Sep 13  2013 selinux
+-rw-r--r--.    1 root root    0 Sep 13  2013 Kickstart_end
+-rw-r--r--     1 root root    0 Sep 13  2013 .autorelabel
+drwx------     2 root root 4.0K Sep 13  2013 .elinks
+drwxr-xr-x     3 root bin  4.0K Sep 18  2013 lustre
+-rw-r--r--     1 root bin     0 Nov 12  2013 .readahead_collect
+drwxr-xr-x.    6 root root 4.0K Sep 17  2014 scswork
+drwxr-xr-x.   18 root root 4.0K May  1  2015 usr
+drwxr-xr-x.   27 root root 4.0K May  1  2015 var
+drwxr-xr-x     4 root bin  4.0K May  1  2015 gpfs
+drwxr-xr-x.    8 root root 4.0K Jun 24  2015 opt
+drwx------.    4 root root 4.0K Jan 13  2017 root
+drwxr-xr-x.    2 root root 4.0K Nov 28  2017 cgroup
+dr-xr-xr-x   112 root bin  4.0K Mar 26  2018 nfs
+drwxr-xr-x.    2 root root 4.0K May 16 17:36 net
+drwxr-xr-x.    2 root root 4.0K May 16 17:36 misc
+dr-xr-xr-x.    2 root root 4.0K Jun 21 02:23 bin
+dr-xr-xr-x.   11 root root  12K Jun 21 02:24 lib64
+dr-xr-xr-x.   13 root root 4.0K Jul  5 22:58 lib
+dr-xr-xr-x.    5 root root 4.0K Aug 16 02:05 boot
+dr-xr-xr-x   523 root root    0 Sep 11 17:21 proc
+drwxr-xr-x    13 root root    0 Sep 11 17:21 sys
+-rw-r--r--     1 root root    0 Sep 11 17:21 .autofsck
+dr-xr-xr-x.   33 root root 4.0K Sep 11 17:21 ..
+dr-xr-xr-x.   33 root root 4.0K Sep 11 17:21 .
+drwxr-xr-x    17 root root 3.7K Sep 11 17:22 dev
+dr-xr-xr-x.    2 root root  12K Sep 13 01:58 sbin
+drwxrwxrwt. 2320 root root  88K Sep 26 00:28 scratch
+drwx------     3 scs  bin  4.0K Oct  3 02:00 scs
+drwxr-xr-x.  153 root root  12K Oct 10 15:04 etc
+drwxrwxrwt. 2090 root root 912K Oct 10 15:09 tmp
+-bash-4.1$ pwd
+/u/ki/jmyles
+-bash-4.1$ cd
+-bash-4.1$ ls
+Desktop  anaconda3  intel  jupyter_notebook_config.py  oldest  repositories
+-bash-4.1$ ls -larth
+total 156K
+-rw-r--r--  1 jmyles ki   257 Sep 12  2017 .plan
+-rw-r--r--  1 jmyles ki  4.2K Sep 12  2017 .mwmrc
+-rw-r--r--  1 jmyles ki    19 Sep 12  2017 .mailrc
+-rw-r--r--  1 jmyles ki     0 Sep 12  2017 .logout
+-rw-r--r--  1 jmyles ki  1.8K Sep 12  2017 .login
+-rw-r--r--  1 jmyles ki   335 Sep 12  2017 .kshrc
+-rw-r--r--  1 jmyles ki   385 Sep 12  2017 .Xdefaults
+lrwxr-xr-x  1 SYSCTL ki    42 Sep 12  2017 .backup -> /afs/.slac.stanford.edu/backup/u/ki/jmyles
+drwxr-xr-x  3 jmyles ki  2.0K Sep 13  2017 .matplotlib
+drwx------  5 jmyles ki  2.0K Sep 13  2017 .local
+drwxr-xr-x  2 jmyles ki  2.0K Sep 19  2017 .pip
+drwxr-xr-x  5 jmyles ki  2.0K Sep 19  2017 .ipython
+drwx------  3 jmyles ki  2.0K Sep 19  2017 .dbus
+-rw-------  1 jmyles ki   256 Sep 19  2017 .pulse-cookie
+-rw-r--r--  1 jmyles ki   618 Sep 20  2017 .profile
+drwx------  2 jmyles ki  2.0K Sep 20  2017 .gconf
+drwx------  2 jmyles ki  2.0K Sep 20  2017 .pulse
+-rw-r--r--  1 jmyles ki    25 Sep 21  2017 .k5login
+drwx------  5 jmyles ki  2.0K Sep 22  2017 .cache
+-rw-------  1 jmyles ki  1.4K Sep 22  2017 .history
+-rw-r--r--  1 jmyles ki   628 Sep 22  2017 .cshrc
+-rw-r--r--  1 jmyles ki   23K Sep 25  2017 jupyter_notebook_config.py
+-rw-r--r--  1 jmyles ki    57 Oct  4  2017 .gitconfig
+drwxr-xr-x  3 jmyles ki  2.0K Jan  8  2018 .astropy
+drwxr-xr-x  3 jmyles ki  2.0K Jan  9  2018 .conda
+-rw-r--r--  1 jmyles ki   387 Jan  9  2018 .bash_profile_backup
+drwxr-xr-x  4 jmyles ki  2.0K Jan  9  2018 .pyxbld
+drwx------  2 jmyles ki  2.0K Feb  8  2018 .elinks
+drwxr-xr-x  4 jmyles ki  2.0K Feb 21  2018 .config
+drwxr-xr-x  4 jmyles ki  2.0K Feb 21  2018 .npm
+drwxr-xr-x  4 jmyles ki  2.0K Mar  8  2018 .jupyter
+drwxr-xr-x  2 jmyles ki  2.0K Apr  3  2018 .ipynb_checkpoints
+-rw-------  1 jmyles ki  7.3K Apr  9  2018 .viminfo
+drwxr-xr-x  4 jmyles ki  2.0K May 12 08:46 .mozilla
+drwxr-xr-x  2 jmyles ki  2.0K May 12 08:46 Desktop
+drwxr-xr-x  2 jmyles ki  2.0K Jun 20 09:24 .fontconfig
+-rw-------  1 jmyles ki    35 Jun 21 10:02 .lesshst
+-rw-r--r--  1 jmyles ki   477 Jul 18 11:25 .bashrc~
+drwx------  3 jmyles ki  2.0K Jul 18 15:37 .ssh
+drwxr-----  3 jmyles ki  2.0K Jul 20 06:44 .pki
+drwxr-xr-x  3 jmyles ki  2.0K Jul 20 06:51 .texlive2011
+drwxr-xr-x  4 jmyles ki  2.0K Jul 20 06:52 .eups
+drwxr-xr-x  3 jmyles ki  2.0K Jul 20 07:16 intel
+-rw-r--r--  1    657 sf    20 Aug 14 16:53 .forward
+drwxr-xr-x 24 jmyles ki  2.0K Aug 25 11:51 anaconda3
+-rw-------  1 jmyles ki    87 Sep  6 10:32 .python_history
+-rw-------  1 jmyles ki  1.0K Sep 24 16:10 .rnd
+drwxr-xr-x  3 jmyles ki  2.0K Sep 29 14:33 oldest
+drwxr-xr-x 17 jmyles ki  2.0K Sep 29 14:36 repositories
+-rw-r--r--  1 jmyles ki    14 Oct  1 08:14 .screenrc~
+-rw-r--r--  1 jmyles ki    19 Oct  1 08:22 .screenrc
+-rw-------  1 jmyles ki    52 Oct  2 09:09 .Xauthority
+drwxr-xr-x  2 bin    sys  14K Oct  3 17:09 ..
+drwxr-xr-x  4 jmyles ki  2.0K Oct  9 10:13 .emacs.d
+-rw-r--r--  1 jmyles ki   562 Oct  9 10:29 .bashrc
+drwxr-xr-x 31 jmyles ki  6.0K Oct  9 10:29 .
+drwxr-xr-x  2 jmyles ki  2.0K Oct  9 20:33 .saves
+-rw-------  1 jmyles ki   18K Oct 10 13:40 .bash_history
+-bash-4.1$ cd ..
+-bash-4.1$ cd - 
+/u/ki/jmyles
+-bash-4.1$ cd ~
+-bash-4.1$ ls - 
+ls: cannot access -: No such file or directory
+-bash-4.1$ cd -
+/u/ki/jmyles
+-bash-4.1$ mkdir newdir
+-bash-4.1$ cd newdir/
+-bash-4.1$ wget https://raw.githubusercontent.com/KIPAC/BootCamp/master/Unix/files_for_practice.tar.gz
+--2018-10-10 15:11:51--  https://raw.githubusercontent.com/KIPAC/BootCamp/master/Unix/files_for_practice.tar.gz
+Resolving raw.githubusercontent.com... 151.101.200.133
+Connecting to raw.githubusercontent.com|151.101.200.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7613 (7.4K) [application/octet-stream]
+Saving to: "files_for_practice.tar.gz"
+
+100%[============================================>] 7,613       --.-K/s   in 0s      
+
+2018-10-10 15:11:52 (26.6 MB/s) - "files_for_practice.tar.gz" saved [7613/7613]
+
+-bash-4.1$ ls
+files_for_practice.tar.gz
+-bash-4.1$ pwd
+/u/ki/jmyles/newdir
+-bash-4.1$ tar -xzf files_for_practice
+tar (child): files_for_practice: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+-bash-4.1$ tar -xzf files_for_practice.tar.gz 
+-bash-4.1$ ls
+files_for_practice  files_for_practice.tar.gz
+-bash-4.1$ tar -xzfv files_for_practice.tar.gz
+tar (child): v: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+-bash-4.1$ ls
+files_for_practice  files_for_practice.tar.gz
+-bash-4.1$ tar -xzvf files_for_practice.tar.gz 
+files_for_practice/
+files_for_practice/executables/
+files_for_practice/random_files/
+files_for_practice/random_files/ab.avi
+files_for_practice/random_files/accusamus.html
+files_for_practice/random_files/ad.avi
+files_for_practice/random_files/ad.webm
+files_for_practice/random_files/aliquid.mp3
+files_for_practice/random_files/amet.mp4
+files_for_practice/random_files/animi.html
+files_for_practice/random_files/animi.mp4
+files_for_practice/random_files/architecto.jpeg
+files_for_practice/random_files/aspernatur.mov
+files_for_practice/random_files/at.avi
+files_for_practice/random_files/at.flac
+files_for_practice/random_files/at.mp3
+files_for_practice/random_files/atque.bmp
+files_for_practice/random_files/atque.css
+files_for_practice/random_files/atque.mp3
+files_for_practice/random_files/aut.html
+files_for_practice/random_files/aut.js
+files_for_practice/random_files/autem.flac
+files_for_practice/random_files/autem.jpeg
+files_for_practice/random_files/clients.txt
+files_for_practice/random_files/consequatur.html
+files_for_practice/random_files/consequatur.jpeg
+files_for_practice/random_files/consequatur.webm
+files_for_practice/random_files/consequuntur.json
+files_for_practice/random_files/corrupti.jpg
+files_for_practice/random_files/corrupti.mp3
+files_for_practice/random_files/cumque.tiff
+files_for_practice/random_files/cupiditate.mp3
+files_for_practice/random_files/cupiditate.mp4
+files_for_practice/random_files/debitis.png
+files_for_practice/random_files/debitis.txt
+files_for_practice/random_files/debitis.wav
+files_for_practice/random_files/dicta.avi
+files_for_practice/random_files/distinctio.avi
+files_for_practice/random_files/distinctio.js
+files_for_practice/random_files/dolor.jpg
+files_for_practice/random_files/dolor.mov
+files_for_practice/random_files/dolore.mp3
+files_for_practice/random_files/dolorem.gif
+files_for_practice/random_files/doloremque.wav
+files_for_practice/random_files/dolores.avi
+files_for_practice/random_files/dolores.mov
+files_for_practice/random_files/dolorum.avi
+files_for_practice/random_files/ea.mp4
+files_for_practice/random_files/eaque.csv
+files_for_practice/random_files/earum.mp3
+files_for_practice/random_files/earum.webm
+files_for_practice/random_files/eligendi.flac
+files_for_practice/random_files/enim.jpg
+files_for_practice/random_files/enim.wav
+files_for_practice/random_files/eos.bmp
+files_for_practice/random_files/eos.txt
+files_for_practice/random_files/error.bmp
+files_for_practice/random_files/esse.csv
+files_for_practice/random_files/est.avi
+files_for_practice/random_files/est.bmp
+files_for_practice/random_files/est.csv
+files_for_practice/random_files/est.flac
+files_for_practice/random_files/est.gif
+files_for_practice/random_files/est.mp3
+files_for_practice/random_files/est.mp4
+files_for_practice/random_files/est.txt
+files_for_practice/random_files/et.avi
+files_for_practice/random_files/et.flac
+files_for_practice/random_files/et.json
+files_for_practice/random_files/et.mp4
+files_for_practice/random_files/et.wav
+files_for_practice/random_files/eum.bmp
+files_for_practice/random_files/eum.mov
+files_for_practice/random_files/eveniet.avi
+files_for_practice/random_files/ex.csv
+files_for_practice/random_files/ex.webm
+files_for_practice/random_files/excepturi.jpeg
+files_for_practice/random_files/expedita.jpeg
+files_for_practice/random_files/expedita.wav
+files_for_practice/random_files/explicabo.html
+files_for_practice/random_files/explicabo.mp4
+files_for_practice/random_files/fugiat.wav
+files_for_practice/random_files/fugiat.webm
+files_for_practice/random_files/fugit.avi
+files_for_practice/random_files/fugit.gif
+files_for_practice/random_files/grepdata.txt
+files_for_practice/random_files/harum.js
+files_for_practice/random_files/harum.mov
+files_for_practice/random_files/hic.js
+files_for_practice/random_files/hic.tiff
+files_for_practice/random_files/illo.js
+files_for_practice/random_files/impedit.avi
+files_for_practice/random_files/impedit.html
+files_for_practice/random_files/impedit.tiff
+files_for_practice/random_files/in.jpg
+files_for_practice/random_files/in.txt
+files_for_practice/random_files/incidunt.mov
+files_for_practice/random_files/inventore.gif
+files_for_practice/random_files/inventore.wav
+files_for_practice/random_files/iure.wav
+files_for_practice/random_files/libero.webm
+files_for_practice/random_files/magnam.avi
+files_for_practice/random_files/magnam.webm
+files_for_practice/random_files/maiores.png
+files_for_practice/random_files/maxime.bmp
+files_for_practice/random_files/maxime.webm
+files_for_practice/random_files/minima.mp3
+files_for_practice/random_files/minima.wav
+files_for_practice/random_files/molestiae.csv
+files_for_practice/random_files/molestiae.flac
+files_for_practice/random_files/molestiae.wav
+files_for_practice/random_files/molestias.css
+files_for_practice/random_files/molestias.html
+files_for_practice/random_files/nam.wav
+files_for_practice/random_files/natus.flac
+files_for_practice/random_files/nesciunt.avi
+files_for_practice/random_files/nihil.jpg
+files_for_practice/random_files/nihil.tiff
+files_for_practice/random_files/nisi.gif
+files_for_practice/random_files/nobis.mp3
+files_for_practice/random_files/non.css
+files_for_practice/random_files/non.jpeg
+files_for_practice/random_files/non.mov
+files_for_practice/random_files/non.tiff
+files_for_practice/random_files/nostrum.jpg
+files_for_practice/random_files/nulla.mov
+files_for_practice/random_files/numquam.mp4
+files_for_practice/random_files/occaecati.tiff
+files_for_practice/random_files/odio.csv
+files_for_practice/random_files/odio.gif
+files_for_practice/random_files/odit.flac
+files_for_practice/random_files/officiis.bmp
+files_for_practice/random_files/omnis.bmp
+files_for_practice/random_files/omnis.gif
+files_for_practice/random_files/omnis.json
+files_for_practice/random_files/omnis.txt
+files_for_practice/random_files/omnis.webm
+files_for_practice/random_files/optio.avi
+files_for_practice/random_files/optio.flac
+files_for_practice/random_files/pariatur.mov
+files_for_practice/random_files/pariatur.webm
+files_for_practice/random_files/placeat.json
+files_for_practice/random_files/porro.tiff
+files_for_practice/random_files/possimus.csv
+files_for_practice/random_files/possimus.wav
+files_for_practice/random_files/praesentium.js
+files_for_practice/random_files/quaerat.mov
+files_for_practice/random_files/quasi.mp4
+files_for_practice/random_files/qui.bmp
+files_for_practice/random_files/qui.gif
+files_for_practice/random_files/qui.js
+files_for_practice/random_files/qui.mp3
+files_for_practice/random_files/qui.wav
+files_for_practice/random_files/quia.flac
+files_for_practice/random_files/quia.html
+files_for_practice/random_files/quia.wav
+files_for_practice/random_files/quidem.flac
+files_for_practice/random_files/quis.avi
+files_for_practice/random_files/quis.mov
+files_for_practice/random_files/quis.wav
+files_for_practice/random_files/quis.webm
+files_for_practice/random_files/quisquam.csv
+files_for_practice/random_files/quos.wav
+files_for_practice/random_files/rem.png
+files_for_practice/random_files/repellat.avi
+files_for_practice/random_files/repudiandae.js
+files_for_practice/random_files/repudiandae.txt
+files_for_practice/random_files/rerum.jpeg
+files_for_practice/random_files/saepe.mp3
+files_for_practice/random_files/sed.txt
+files_for_practice/random_files/similique.png
+files_for_practice/random_files/similique.webm
+files_for_practice/random_files/sit.csv
+files_for_practice/random_files/sit.js
+files_for_practice/random_files/sit.webm
+files_for_practice/random_files/soluta.mov
+files_for_practice/random_files/sunt.webm
+files_for_practice/random_files/tempora.jpeg
+files_for_practice/random_files/tempore.gif
+files_for_practice/random_files/temporibus.css
+files_for_practice/random_files/temporibus.json
+files_for_practice/random_files/totam.gif
+files_for_practice/random_files/ullam.css
+files_for_practice/random_files/users.txt
+files_for_practice/random_files/ut.avi
+files_for_practice/random_files/ut.flac
+files_for_practice/random_files/ut.jpg
+files_for_practice/random_files/ut.mp3
+files_for_practice/random_files/ut.png
+files_for_practice/random_files/velit.mp3
+files_for_practice/random_files/veritatis.mp3
+files_for_practice/random_files/vitae.mp4
+files_for_practice/random_files/voluptas.csv
+files_for_practice/random_files/voluptas.tiff
+files_for_practice/random_files/voluptate.tiff
+files_for_practice/random_files/voluptatem.bmp
+files_for_practice/random_files/voluptatem.html
+files_for_practice/random_files/voluptatem.txt
+files_for_practice/executables/alphabet.txt
+files_for_practice/executables/reverse
+files_for_practice/executables/tar
+files_for_practice/executables/wget
+-bash-4.1$ tar -xvvzf files_for_practice.tar.gz 
+drwxr-xr-x Joe/staff         0 2016-10-04 22:27 files_for_practice/
+drwxr-xr-x Joe/staff         0 2016-10-04 22:27 files_for_practice/executables/
+drwxr-xr-x Joe/staff         0 2016-10-04 22:28 files_for_practice/random_files/
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ab.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/accusamus.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ad.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ad.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/aliquid.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/amet.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/animi.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/animi.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/architecto.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/aspernatur.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/at.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/at.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/at.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/atque.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/atque.css
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/atque.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/aut.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/aut.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/autem.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/autem.jpeg
+-rw-r--r-- Joe/staff      3256 2015-09-16 22:53 files_for_practice/random_files/clients.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/consequatur.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/consequatur.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/consequatur.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/consequuntur.json
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/corrupti.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/corrupti.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/cumque.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/cupiditate.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/cupiditate.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/debitis.png
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/debitis.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/debitis.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dicta.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/distinctio.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/distinctio.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolor.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolor.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolore.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolorem.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/doloremque.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolores.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolores.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/dolorum.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ea.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eaque.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/earum.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/earum.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eligendi.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/enim.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/enim.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eos.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eos.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/error.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/esse.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/est.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/et.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/et.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/et.json
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/et.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/et.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eum.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eum.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/eveniet.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ex.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ex.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/excepturi.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/expedita.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/expedita.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/explicabo.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/explicabo.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/fugiat.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/fugiat.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/fugit.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/fugit.gif
+-rw-r--r-- Joe/staff       744 2016-10-04 22:28 files_for_practice/random_files/grepdata.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/harum.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/harum.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/hic.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/hic.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/illo.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/impedit.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/impedit.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/impedit.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/in.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/in.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/incidunt.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/inventore.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/inventore.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/iure.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/libero.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/magnam.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/magnam.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/maiores.png
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/maxime.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/maxime.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/minima.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/minima.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/molestiae.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/molestiae.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/molestiae.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/molestias.css
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/molestias.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nam.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/natus.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nesciunt.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nihil.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nihil.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nisi.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nobis.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/non.css
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/non.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/non.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/non.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nostrum.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/nulla.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/numquam.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/occaecati.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/odio.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/odio.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/odit.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/officiis.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/omnis.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/omnis.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/omnis.json
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/omnis.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/omnis.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/optio.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/optio.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/pariatur.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/pariatur.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/placeat.json
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/porro.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/possimus.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/possimus.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/praesentium.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quaerat.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quasi.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/qui.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/qui.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/qui.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/qui.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/qui.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quia.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quia.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quia.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quidem.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quis.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quis.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quis.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quis.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quisquam.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/quos.wav
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/rem.png
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/repellat.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/repudiandae.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/repudiandae.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/rerum.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/saepe.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/sed.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/similique.png
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/similique.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/sit.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/sit.js
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/sit.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/soluta.mov
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/sunt.webm
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/tempora.jpeg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/tempore.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/temporibus.css
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/temporibus.json
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/totam.gif
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ullam.css
+-rw-r--r-- Joe/staff      3073 2015-09-16 22:53 files_for_practice/random_files/users.txt
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ut.avi
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ut.flac
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ut.jpg
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ut.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/ut.png
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/velit.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/veritatis.mp3
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/vitae.mp4
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptas.csv
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptas.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptate.tiff
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptatem.bmp
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptatem.html
+-rw-r--r-- Joe/staff         0 2015-09-16 22:47 files_for_practice/random_files/voluptatem.txt
+-rw-r--r-- Joe/staff        27 2015-09-22 09:08 files_for_practice/executables/alphabet.txt
+-rw-r--r-- Joe/staff        76 2015-09-23 15:26 files_for_practice/executables/reverse
+-rw-r--r-- Joe/staff        74 2015-09-17 14:57 files_for_practice/executables/tar
+-rwxr--r-- Joe/staff        75 2015-09-17 14:57 files_for_practice/executables/wget
+-bash-4.1$ pwd
+/u/ki/jmyles/newdir
+-bash-4.1$ cd files_for_practice/random_files/
+-bash-4.1$ ls
+ab.avi		   dolorem.gif	   fugiat.wav	   non.css	   quis.wav
+accusamus.html	   doloremque.wav  fugiat.webm	   non.jpeg	   quis.webm
+ad.avi		   dolores.avi	   fugit.avi	   non.mov	   quisquam.csv
+ad.webm		   dolores.mov	   fugit.gif	   non.tiff	   quos.wav
+aliquid.mp3	   dolorum.avi	   grepdata.txt    nostrum.jpg	   rem.png
+amet.mp4	   ea.mp4	   harum.js	   nulla.mov	   repellat.avi
+animi.html	   eaque.csv	   harum.mov	   numquam.mp4	   repudiandae.js
+animi.mp4	   earum.mp3	   hic.js	   occaecati.tiff  repudiandae.txt
+architecto.jpeg    earum.webm	   hic.tiff	   odio.csv	   rerum.jpeg
+aspernatur.mov	   eligendi.flac   illo.js	   odio.gif	   saepe.mp3
+at.avi		   enim.jpg	   impedit.avi	   odit.flac	   sed.txt
+at.flac		   enim.wav	   impedit.html    officiis.bmp    similique.png
+at.mp3		   eos.bmp	   impedit.tiff    omnis.bmp	   similique.webm
+atque.bmp	   eos.txt	   in.jpg	   omnis.gif	   sit.csv
+atque.css	   error.bmp	   in.txt	   omnis.json	   sit.js
+atque.mp3	   esse.csv	   incidunt.mov    omnis.txt	   sit.webm
+aut.html	   est.avi	   inventore.gif   omnis.webm	   soluta.mov
+aut.js		   est.bmp	   inventore.wav   optio.avi	   sunt.webm
+autem.flac	   est.csv	   iure.wav	   optio.flac	   tempora.jpeg
+autem.jpeg	   est.flac	   libero.webm	   pariatur.mov    tempore.gif
+clients.txt	   est.gif	   magnam.avi	   pariatur.webm   temporibus.css
+consequatur.html   est.mp3	   magnam.webm	   placeat.json    temporibus.json
+consequatur.jpeg   est.mp4	   maiores.png	   porro.tiff	   totam.gif
+consequatur.webm   est.txt	   maxime.bmp	   possimus.csv    ullam.css
+consequuntur.json  et.avi	   maxime.webm	   possimus.wav    users.txt
+corrupti.jpg	   et.flac	   minima.mp3	   praesentium.js  ut.avi
+corrupti.mp3	   et.json	   minima.wav	   quaerat.mov	   ut.flac
+cumque.tiff	   et.mp4	   molestiae.csv   quasi.mp4	   ut.jpg
+cupiditate.mp3	   et.wav	   molestiae.flac  qui.bmp	   ut.mp3
+cupiditate.mp4	   eum.bmp	   molestiae.wav   qui.gif	   ut.png
+debitis.png	   eum.mov	   molestias.css   qui.js	   velit.mp3
+debitis.txt	   eveniet.avi	   molestias.html  qui.mp3	   veritatis.mp3
+debitis.wav	   ex.csv	   nam.wav	   qui.wav	   vitae.mp4
+dicta.avi	   ex.webm	   natus.flac	   quia.flac	   voluptas.csv
+distinctio.avi	   excepturi.jpeg  nesciunt.avi    quia.html	   voluptas.tiff
+distinctio.js	   expedita.jpeg   nihil.jpg	   quia.wav	   voluptate.tiff
+dolor.jpg	   expedita.wav    nihil.tiff	   quidem.flac	   voluptatem.bmp
+dolor.mov	   explicabo.html  nisi.gif	   quis.avi	   voluptatem.html
+dolore.mp3	   explicabo.mp4   nobis.mp3	   quis.mov	   voluptatem.txt
+-bash-4.1$ ls *.mp3
+aliquid.mp3  corrupti.mp3    earum.mp3	 nobis.mp3  ut.mp3
+at.mp3	     cupiditate.mp3  est.mp3	 qui.mp3    velit.mp3
+atque.mp3    dolore.mp3      minima.mp3  saepe.mp3  veritatis.mp3
+-bash-4.1$ mkdir mp3
+-bash-4.1$ mv *.mp3 mp3/
+-bash-4.1$ ls
+ab.avi		   dolorum.avi	   grepdata.txt    non.tiff	   quisquam.csv
+accusamus.html	   ea.mp4	   harum.js	   nostrum.jpg	   quos.wav
+ad.avi		   eaque.csv	   harum.mov	   nulla.mov	   rem.png
+ad.webm		   earum.webm	   hic.js	   numquam.mp4	   repellat.avi
+amet.mp4	   eligendi.flac   hic.tiff	   occaecati.tiff  repudiandae.js
+animi.html	   enim.jpg	   illo.js	   odio.csv	   repudiandae.txt
+animi.mp4	   enim.wav	   impedit.avi	   odio.gif	   rerum.jpeg
+architecto.jpeg    eos.bmp	   impedit.html    odit.flac	   sed.txt
+aspernatur.mov	   eos.txt	   impedit.tiff    officiis.bmp    similique.png
+at.avi		   error.bmp	   in.jpg	   omnis.bmp	   similique.webm
+at.flac		   esse.csv	   in.txt	   omnis.gif	   sit.csv
+atque.bmp	   est.avi	   incidunt.mov    omnis.json	   sit.js
+atque.css	   est.bmp	   inventore.gif   omnis.txt	   sit.webm
+aut.html	   est.csv	   inventore.wav   omnis.webm	   soluta.mov
+aut.js		   est.flac	   iure.wav	   optio.avi	   sunt.webm
+autem.flac	   est.gif	   libero.webm	   optio.flac	   tempora.jpeg
+autem.jpeg	   est.mp4	   magnam.avi	   pariatur.mov    tempore.gif
+clients.txt	   est.txt	   magnam.webm	   pariatur.webm   temporibus.css
+consequatur.html   et.avi	   maiores.png	   placeat.json    temporibus.json
+consequatur.jpeg   et.flac	   maxime.bmp	   porro.tiff	   totam.gif
+consequatur.webm   et.json	   maxime.webm	   possimus.csv    ullam.css
+consequuntur.json  et.mp4	   minima.wav	   possimus.wav    users.txt
+corrupti.jpg	   et.wav	   molestiae.csv   praesentium.js  ut.avi
+cumque.tiff	   eum.bmp	   molestiae.flac  quaerat.mov	   ut.flac
+cupiditate.mp4	   eum.mov	   molestiae.wav   quasi.mp4	   ut.jpg
+debitis.png	   eveniet.avi	   molestias.css   qui.bmp	   ut.png
+debitis.txt	   ex.csv	   molestias.html  qui.gif	   vitae.mp4
+debitis.wav	   ex.webm	   mp3		   qui.js	   voluptas.csv
+dicta.avi	   excepturi.jpeg  nam.wav	   qui.wav	   voluptas.tiff
+distinctio.avi	   expedita.jpeg   natus.flac	   quia.flac	   voluptate.tiff
+distinctio.js	   expedita.wav    nesciunt.avi    quia.html	   voluptatem.bmp
+dolor.jpg	   explicabo.html  nihil.jpg	   quia.wav	   voluptatem.html
+dolor.mov	   explicabo.mp4   nihil.tiff	   quidem.flac	   voluptatem.txt
+dolorem.gif	   fugiat.wav	   nisi.gif	   quis.avi
+doloremque.wav	   fugiat.webm	   non.css	   quis.mov
+dolores.avi	   fugit.avi	   non.jpeg	   quis.wav
+dolores.mov	   fugit.gif	   non.mov	   quis.webm
+-bash-4.1$ ls *.mp3
+ls: cannot access *.mp3: No such file or directory
+-bash-4.1$ ls mp3/
+aliquid.mp3  corrupti.mp3    earum.mp3	 nobis.mp3  ut.mp3
+at.mp3	     cupiditate.mp3  est.mp3	 qui.mp3    velit.mp3
+atque.mp3    dolore.mp3      minima.mp3  saepe.mp3  veritatis.mp3
+-bash-4.1$ ls est.*
+est.avi  est.bmp  est.csv  est.flac  est.gif  est.mp4  est.txt
+-bash-4.1$ cp est.* est
+cp: target `est' is not a directory
+-bash-4.1$ mkdir est
+-bash-4.1$ cp est.* est
+-bash-4.1$ mv architecto.mp3 consequuntur.html
+mv: cannot stat `architecto.mp3': No such file or directory
+-bash-4.1$ ls
+ab.avi		   dolorum.avi	   fugit.gif	   non.mov	   quis.webm
+accusamus.html	   ea.mp4	   grepdata.txt    non.tiff	   quisquam.csv
+ad.avi		   eaque.csv	   harum.js	   nostrum.jpg	   quos.wav
+ad.webm		   earum.webm	   harum.mov	   nulla.mov	   rem.png
+amet.mp4	   eligendi.flac   hic.js	   numquam.mp4	   repellat.avi
+animi.html	   enim.jpg	   hic.tiff	   occaecati.tiff  repudiandae.js
+animi.mp4	   enim.wav	   illo.js	   odio.csv	   repudiandae.txt
+architecto.jpeg    eos.bmp	   impedit.avi	   odio.gif	   rerum.jpeg
+aspernatur.mov	   eos.txt	   impedit.html    odit.flac	   sed.txt
+at.avi		   error.bmp	   impedit.tiff    officiis.bmp    similique.png
+at.flac		   esse.csv	   in.jpg	   omnis.bmp	   similique.webm
+atque.bmp	   est		   in.txt	   omnis.gif	   sit.csv
+atque.css	   est.avi	   incidunt.mov    omnis.json	   sit.js
+aut.html	   est.bmp	   inventore.gif   omnis.txt	   sit.webm
+aut.js		   est.csv	   inventore.wav   omnis.webm	   soluta.mov
+autem.flac	   est.flac	   iure.wav	   optio.avi	   sunt.webm
+autem.jpeg	   est.gif	   libero.webm	   optio.flac	   tempora.jpeg
+clients.txt	   est.mp4	   magnam.avi	   pariatur.mov    tempore.gif
+consequatur.html   est.txt	   magnam.webm	   pariatur.webm   temporibus.css
+consequatur.jpeg   et.avi	   maiores.png	   placeat.json    temporibus.json
+consequatur.webm   et.flac	   maxime.bmp	   porro.tiff	   totam.gif
+consequuntur.json  et.json	   maxime.webm	   possimus.csv    ullam.css
+corrupti.jpg	   et.mp4	   minima.wav	   possimus.wav    users.txt
+cumque.tiff	   et.wav	   molestiae.csv   praesentium.js  ut.avi
+cupiditate.mp4	   eum.bmp	   molestiae.flac  quaerat.mov	   ut.flac
+debitis.png	   eum.mov	   molestiae.wav   quasi.mp4	   ut.jpg
+debitis.txt	   eveniet.avi	   molestias.css   qui.bmp	   ut.png
+debitis.wav	   ex.csv	   molestias.html  qui.gif	   vitae.mp4
+dicta.avi	   ex.webm	   mp3		   qui.js	   voluptas.csv
+distinctio.avi	   excepturi.jpeg  nam.wav	   qui.wav	   voluptas.tiff
+distinctio.js	   expedita.jpeg   natus.flac	   quia.flac	   voluptate.tiff
+dolor.jpg	   expedita.wav    nesciunt.avi    quia.html	   voluptatem.bmp
+dolor.mov	   explicabo.html  nihil.jpg	   quia.wav	   voluptatem.html
+dolorem.gif	   explicabo.mp4   nihil.tiff	   quidem.flac	   voluptatem.txt
+doloremque.wav	   fugiat.wav	   nisi.gif	   quis.avi
+dolores.avi	   fugiat.webm	   non.css	   quis.mov
+dolores.mov	   fugit.avi	   non.jpeg	   quis.wav
+-bash-4.1$ ls us*
+users.txt
+-bash-4.1$ tail -n 2 users.txt 
+glennis03
+nleannon
+-bash-4.1$ head -n 3 clients.txt 
+hilpert.clarisa
+lona38
+swaniawski.macarthur
+-bash-4.1$ which tar
+/bin/tar
+-bash-4.1$ which wget 
+/usr/bin/wget
+-bash-4.1$ which which
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+	/usr/bin/which
+-bash-4.1$ echo $PATH
+/u/ki/jmyles/anaconda3/bin:/usr/lib64/qt-3.3/bin:/opt/lsf-openmpi/1.8.1/bin/:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin
+-bash-4.1$ source activate py27
+(py27) -bash-4.1$ echo $PATH
+/u/ki/jmyles/anaconda3/envs/py27/bin:/u/ki/jmyles/anaconda3/bin:/usr/lib64/qt-3.3/bin:/opt/lsf-openmpi/1.8.1/bin/:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin
+(py27) -bash-4.1$ ls 
+ab.avi		   dolorum.avi	   fugit.gif	   non.mov	   quis.webm
+accusamus.html	   ea.mp4	   grepdata.txt    non.tiff	   quisquam.csv
+ad.avi		   eaque.csv	   harum.js	   nostrum.jpg	   quos.wav
+ad.webm		   earum.webm	   harum.mov	   nulla.mov	   rem.png
+amet.mp4	   eligendi.flac   hic.js	   numquam.mp4	   repellat.avi
+animi.html	   enim.jpg	   hic.tiff	   occaecati.tiff  repudiandae.js
+animi.mp4	   enim.wav	   illo.js	   odio.csv	   repudiandae.txt
+architecto.jpeg    eos.bmp	   impedit.avi	   odio.gif	   rerum.jpeg
+aspernatur.mov	   eos.txt	   impedit.html    odit.flac	   sed.txt
+at.avi		   error.bmp	   impedit.tiff    officiis.bmp    similique.png
+at.flac		   esse.csv	   in.jpg	   omnis.bmp	   similique.webm
+atque.bmp	   est		   in.txt	   omnis.gif	   sit.csv
+atque.css	   est.avi	   incidunt.mov    omnis.json	   sit.js
+aut.html	   est.bmp	   inventore.gif   omnis.txt	   sit.webm
+aut.js		   est.csv	   inventore.wav   omnis.webm	   soluta.mov
+autem.flac	   est.flac	   iure.wav	   optio.avi	   sunt.webm
+autem.jpeg	   est.gif	   libero.webm	   optio.flac	   tempora.jpeg
+clients.txt	   est.mp4	   magnam.avi	   pariatur.mov    tempore.gif
+consequatur.html   est.txt	   magnam.webm	   pariatur.webm   temporibus.css
+consequatur.jpeg   et.avi	   maiores.png	   placeat.json    temporibus.json
+consequatur.webm   et.flac	   maxime.bmp	   porro.tiff	   totam.gif
+consequuntur.json  et.json	   maxime.webm	   possimus.csv    ullam.css
+corrupti.jpg	   et.mp4	   minima.wav	   possimus.wav    users.txt
+cumque.tiff	   et.wav	   molestiae.csv   praesentium.js  ut.avi
+cupiditate.mp4	   eum.bmp	   molestiae.flac  quaerat.mov	   ut.flac
+debitis.png	   eum.mov	   molestiae.wav   quasi.mp4	   ut.jpg
+debitis.txt	   eveniet.avi	   molestias.css   qui.bmp	   ut.png
+debitis.wav	   ex.csv	   molestias.html  qui.gif	   vitae.mp4
+dicta.avi	   ex.webm	   mp3		   qui.js	   voluptas.csv
+distinctio.avi	   excepturi.jpeg  nam.wav	   qui.wav	   voluptas.tiff
+distinctio.js	   expedita.jpeg   natus.flac	   quia.flac	   voluptate.tiff
+dolor.jpg	   expedita.wav    nesciunt.avi    quia.html	   voluptatem.bmp
+dolor.mov	   explicabo.html  nihil.jpg	   quia.wav	   voluptatem.html
+dolorem.gif	   explicabo.mp4   nihil.tiff	   quidem.flac	   voluptatem.txt
+doloremque.wav	   fugiat.wav	   nisi.gif	   quis.avi
+dolores.avi	   fugiat.webm	   non.css	   quis.mov
+dolores.mov	   fugit.avi	   non.jpeg	   quis.wav
+(py27) -bash-4.1$ ls -l
+total 13
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ab.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 accusamus.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ad.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ad.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 amet.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 animi.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 animi.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 architecto.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 aspernatur.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 at.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 at.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 atque.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 atque.css
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 aut.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 aut.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 autem.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 autem.jpeg
+-rw-r--r-- 1 jmyles ki 3256 Sep 16  2015 clients.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 consequatur.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 consequatur.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 consequatur.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 consequuntur.json
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 corrupti.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 cumque.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 cupiditate.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 debitis.png
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 debitis.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 debitis.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dicta.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 distinctio.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 distinctio.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolor.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolor.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolorem.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 doloremque.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolores.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolores.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 dolorum.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ea.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eaque.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 earum.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eligendi.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 enim.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 enim.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eos.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eos.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 error.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 esse.csv
+drwxr-xr-x 2 jmyles ki 2048 Oct 10 15:17 est
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 est.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 et.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 et.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 et.json
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 et.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 et.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eum.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eum.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 eveniet.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ex.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ex.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 excepturi.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 expedita.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 expedita.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 explicabo.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 explicabo.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 fugiat.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 fugiat.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 fugit.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 fugit.gif
+-rw-r--r-- 1 jmyles ki  744 Oct  4  2016 grepdata.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 harum.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 harum.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 hic.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 hic.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 illo.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 impedit.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 impedit.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 impedit.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 in.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 in.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 incidunt.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 inventore.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 inventore.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 iure.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 libero.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 magnam.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 magnam.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 maiores.png
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 maxime.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 maxime.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 minima.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 molestiae.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 molestiae.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 molestiae.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 molestias.css
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 molestias.html
+drwxr-xr-x 2 jmyles ki 2048 Oct 10 15:16 mp3
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nam.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 natus.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nesciunt.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nihil.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nihil.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nisi.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 non.css
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 non.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 non.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 non.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nostrum.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 nulla.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 numquam.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 occaecati.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 odio.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 odio.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 odit.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 officiis.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 omnis.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 omnis.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 omnis.json
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 omnis.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 omnis.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 optio.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 optio.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 pariatur.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 pariatur.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 placeat.json
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 porro.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 possimus.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 possimus.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 praesentium.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quaerat.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quasi.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 qui.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 qui.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 qui.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 qui.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quia.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quia.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quia.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quidem.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quis.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quis.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quis.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quis.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quisquam.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 quos.wav
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 rem.png
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 repellat.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 repudiandae.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 repudiandae.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 rerum.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 sed.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 similique.png
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 similique.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 sit.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 sit.js
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 sit.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 soluta.mov
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 sunt.webm
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 tempora.jpeg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 tempore.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 temporibus.css
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 temporibus.json
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 totam.gif
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ullam.css
+-rw-r--r-- 1 jmyles ki 3073 Sep 16  2015 users.txt
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ut.avi
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ut.flac
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ut.jpg
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 ut.png
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 vitae.mp4
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptas.csv
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptas.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptate.tiff
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptatem.bmp
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptatem.html
+-rw-r--r-- 1 jmyles ki    0 Sep 16  2015 voluptatem.txt
+(py27) -bash-4.1$ ls
+ab.avi		   dolorum.avi	   fugit.gif	   non.mov	   quis.webm
+accusamus.html	   ea.mp4	   grepdata.txt    non.tiff	   quisquam.csv
+ad.avi		   eaque.csv	   harum.js	   nostrum.jpg	   quos.wav
+ad.webm		   earum.webm	   harum.mov	   nulla.mov	   rem.png
+amet.mp4	   eligendi.flac   hic.js	   numquam.mp4	   repellat.avi
+animi.html	   enim.jpg	   hic.tiff	   occaecati.tiff  repudiandae.js
+animi.mp4	   enim.wav	   illo.js	   odio.csv	   repudiandae.txt
+architecto.jpeg    eos.bmp	   impedit.avi	   odio.gif	   rerum.jpeg
+aspernatur.mov	   eos.txt	   impedit.html    odit.flac	   sed.txt
+at.avi		   error.bmp	   impedit.tiff    officiis.bmp    similique.png
+at.flac		   esse.csv	   in.jpg	   omnis.bmp	   similique.webm
+atque.bmp	   est		   in.txt	   omnis.gif	   sit.csv
+atque.css	   est.avi	   incidunt.mov    omnis.json	   sit.js
+aut.html	   est.bmp	   inventore.gif   omnis.txt	   sit.webm
+aut.js		   est.csv	   inventore.wav   omnis.webm	   soluta.mov
+autem.flac	   est.flac	   iure.wav	   optio.avi	   sunt.webm
+autem.jpeg	   est.gif	   libero.webm	   optio.flac	   tempora.jpeg
+clients.txt	   est.mp4	   magnam.avi	   pariatur.mov    tempore.gif
+consequatur.html   est.txt	   magnam.webm	   pariatur.webm   temporibus.css
+consequatur.jpeg   et.avi	   maiores.png	   placeat.json    temporibus.json
+consequatur.webm   et.flac	   maxime.bmp	   porro.tiff	   totam.gif
+consequuntur.json  et.json	   maxime.webm	   possimus.csv    ullam.css
+corrupti.jpg	   et.mp4	   minima.wav	   possimus.wav    users.txt
+cumque.tiff	   et.wav	   molestiae.csv   praesentium.js  ut.avi
+cupiditate.mp4	   eum.bmp	   molestiae.flac  quaerat.mov	   ut.flac
+debitis.png	   eum.mov	   molestiae.wav   quasi.mp4	   ut.jpg
+debitis.txt	   eveniet.avi	   molestias.css   qui.bmp	   ut.png
+debitis.wav	   ex.csv	   molestias.html  qui.gif	   vitae.mp4
+dicta.avi	   ex.webm	   mp3		   qui.js	   voluptas.csv
+distinctio.avi	   excepturi.jpeg  nam.wav	   qui.wav	   voluptas.tiff
+distinctio.js	   expedita.jpeg   natus.flac	   quia.flac	   voluptate.tiff
+dolor.jpg	   expedita.wav    nesciunt.avi    quia.html	   voluptatem.bmp
+dolor.mov	   explicabo.html  nihil.jpg	   quia.wav	   voluptatem.html
+dolorem.gif	   explicabo.mp4   nihil.tiff	   quidem.flac	   voluptatem.txt
+doloremque.wav	   fugiat.wav	   nisi.gif	   quis.avi
+dolores.avi	   fugiat.webm	   non.css	   quis.mov
+dolores.mov	   fugit.avi	   non.jpeg	   quis.wav
+(py27) -bash-4.1$ ls e*
+ea.mp4	       eos.bmp	  est.csv   et.flac  eveniet.avi     explicabo.html
+eaque.csv      eos.txt	  est.flac  et.json  ex.csv	     explicabo.mp4
+earum.webm     error.bmp  est.gif   et.mp4   ex.webm
+eligendi.flac  esse.csv   est.mp4   et.wav   excepturi.jpeg
+enim.jpg       est.avi	  est.txt   eum.bmp  expedita.jpeg
+enim.wav       est.bmp	  et.avi    eum.mov  expedita.wav
+
+est:
+est.avi  est.bmp  est.csv  est.flac  est.gif  est.mp4  est.txt
+(py27) -bash-4.1$ cd ../
+(py27) -bash-4.1$ ls
+executables  random_files
+(py27) -bash-4.1$ cd executables/
+(py27) -bash-4.1$ pwd
+/u/ki/jmyles/newdir/files_for_practice/executables
+(py27) -bash-4.1$ ls
+alphabet.txt  reverse  tar  wget
+(py27) -bash-4.1$ ls -l
+total 4
+-rw-r--r-- 1 jmyles ki 27 Sep 22  2015 alphabet.txt
+-rw-r--r-- 1 jmyles ki 76 Sep 23  2015 reverse
+-rw-r--r-- 1 jmyles ki 74 Sep 17  2015 tar
+-rwxr--r-- 1 jmyles ki 75 Sep 17  2015 wget
+(py27) -bash-4.1$ ./wget 
+This is a fake `wget` program that just prints this line!
+(py27) -bash-4.1$ chmod u-x ./wget
+(py27) -bash-4.1$ ls -l
+total 4
+-rw-r--r-- 1 jmyles ki 27 Sep 22  2015 alphabet.txt
+-rw-r--r-- 1 jmyles ki 76 Sep 23  2015 reverse
+-rw-r--r-- 1 jmyles ki 74 Sep 17  2015 tar
+-rw-r--r-- 1 jmyles ki 75 Sep 17  2015 wget
+(py27) -bash-4.1$ ./wet
+-bash: ./wet: No such file or directory
+(py27) -bash-4.1$ ./wget
+-bash: ./wget: Permission denied
+(py27) -bash-4.1$ chmod u+x ./wget
+(py27) -bash-4.1$ ./wget
+This is a fake `wget` program that just prints this line!
+(py27) -bash-4.1$ ls /
+Kickstart_end  cern    gpfs   lost+found  mnt  proc	scs	 sys  var
+afs	       cgroup  home   lustre	  net  root	scswork  tmp
+bin	       dev     lib    media	  nfs  sbin	selinux  u
+boot	       etc     lib64  misc	  opt  scratch	srv	 usr
+(py27) -bash-4.1$ ls -larth /
+total 1.2M
+drwxr-xr-x   401 root root  18K Dec 31  1969 afs
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 srv
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 mnt
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 media
+drwxr-xr-x.    2 root root 4.0K Jun 28  2011 home
+lrwxrwxrwx     1 root root   24 Sep 13  2013 u -> /afs/slac.stanford.edu/u
+lrwxrwxrwx     1 root root   48 Sep 13  2013 cern -> /afs/slac.stanford.edu/package/cernlib/@sys/cern
+drwx------.    2 root root  16K Sep 13  2013 lost+found
+drwxr-xr-x.    2 root root 4.0K Sep 13  2013 selinux
+-rw-r--r--.    1 root root    0 Sep 13  2013 Kickstart_end
+-rw-r--r--     1 root root    0 Sep 13  2013 .autorelabel
+drwx------     2 root root 4.0K Sep 13  2013 .elinks
+drwxr-xr-x     3 root bin  4.0K Sep 18  2013 lustre
+-rw-r--r--     1 root bin     0 Nov 12  2013 .readahead_collect
+drwxr-xr-x.    6 root root 4.0K Sep 17  2014 scswork
+drwxr-xr-x.   18 root root 4.0K May  1  2015 usr
+drwxr-xr-x.   27 root root 4.0K May  1  2015 var
+drwxr-xr-x     4 root bin  4.0K May  1  2015 gpfs
+drwxr-xr-x.    8 root root 4.0K Jun 24  2015 opt
+drwx------.    4 root root 4.0K Jan 13  2017 root
+drwxr-xr-x.    2 root root 4.0K Nov 28  2017 cgroup
+dr-xr-xr-x   112 root bin  4.0K Mar 26  2018 nfs
+drwxr-xr-x.    2 root root 4.0K May 16 17:36 net
+drwxr-xr-x.    2 root root 4.0K May 16 17:36 misc
+dr-xr-xr-x.    2 root root 4.0K Jun 21 02:23 bin
+dr-xr-xr-x.   11 root root  12K Jun 21 02:24 lib64
+dr-xr-xr-x.   13 root root 4.0K Jul  5 22:58 lib
+dr-xr-xr-x.    5 root root 4.0K Aug 16 02:05 boot
+dr-xr-xr-x   522 root root    0 Sep 11 17:21 proc
+drwxr-xr-x    13 root root    0 Sep 11 17:21 sys
+-rw-r--r--     1 root root    0 Sep 11 17:21 .autofsck
+dr-xr-xr-x.   33 root root 4.0K Sep 11 17:21 ..
+dr-xr-xr-x.   33 root root 4.0K Sep 11 17:21 .
+drwxr-xr-x    17 root root 3.7K Sep 11 17:22 dev
+dr-xr-xr-x.    2 root root  12K Sep 13 01:58 sbin
+drwxrwxrwt. 2320 root root  88K Sep 26 00:28 scratch
+drwx------     3 scs  bin  4.0K Oct  3 02:00 scs
+drwxr-xr-x.  153 root root  12K Oct 10 15:10 etc
+drwxrwxrwt. 2090 root root 912K Oct 10 15:24 tmp
+(py27) -bash-4.1$ ls /private/
+ls: cannot access /private/: No such file or directory
+(py27) -bash-4.1$ chmod u+r /private/
+chmod: cannot access `/private/': No such file or directory
+(py27) -bash-4.1$ ls /
+Kickstart_end  cern    gpfs   lost+found  mnt  proc	scs	 sys  var
+afs	       cgroup  home   lustre	  net  root	scswork  tmp
+bin	       dev     lib    media	  nfs  sbin	selinux  u
+boot	       etc     lib64  misc	  opt  scratch	srv	 usr
+(py27) -bash-4.1$ ls /private/
+ls: cannot access /private/: No such file or directory
+(py27) -bash-4.1$ ls /proc
+1      12737  12794  12851  1974   25647  3532	48    7309	 cpuinfo
+10     12738  12795  12852  1976   25650  3533	483   7310	 crypto
+100    12739  12796  13     19888  25651  3534	49    7311	 devices
+101    12740  12797  1321   1991   26	  3535	5     7312	 diskstats
+102    12741  12798  13480  19919  2643   3536	50    7313	 dma
+103    12742  12799  1351   2	   27	  3537	51    7314	 driver
+10333  12743  12800  1358   20	   2722   3538	5109  7315	 execdomains
+10498  12744  12801  138    2003   2736   3539	52    7316	 fb
+105    12745  12802  13993  2004   27377  3540	53    7317	 filesystems
+106    12746  12803  14     2010   27401  3541	5305  7318	 fs
+10894  12747  12804  14023  20174  27402  3542	5320  7319	 interrupts
+10933  12748  12805  14024  20198  2746   3543	5321  7320	 iomem
+10934  12749  12806  14189  20199  2756   3544	54    7321	 ioports
+11     12750  12807  14216  2028   27598  3545	55    7322	 ipmi
+11035  12751  12808  14217  2033   2768   3546	56    7323	 irq
+1119   12752  12809  14393  2035   27759  3549	57    7324	 kallsyms
+1123   12753  12810  14692  2036   2784   3550	58    7325	 kcore
+1126   12754  12811  14705  2037   28	  3551	59    7326	 key-users
+1129   12755  12812  14706  2040   2875   3552	6     7327	 keys
+1133   12756  12813  14823  2042   2876   3553	60    7328	 kmsg
+11414  12757  12814  15     20437  2877   3554	61    7329	 kpagecount
+11497  12758  12815  1508   20438  28982  3555	62    7330	 kpageflags
+11533  12759  12816  15198  2044   28985  3556	63    7398	 loadavg
+11578  12760  12817  16     2046   28986  3557	64    74	 locks
+11580  12761  12818  16243  2048   29	  3564	642   7486	 mdstat
+11582  12762  12819  16244  2049   2962   3565	65    75	 meminfo
+11583  12763  12820  1637   2051   29877  3580	657   76	 misc
+11584  12764  12821  1671   20683  3	  36	66    77	 modules
+12     12765  12822  16758  2070   30	  3600	67    78	 mounts
+1232   12766  12823  16791  20708  31	  3625	68    7890	 mtd
+1233   12767  12824  17     20709  31772  367	69    79	 mtrr
+1235   12768  12825  1705   21	   32	  368	7     8		 net
+1236   12769  12826  17117  21259  33	  37	70    80	 pagetypeinfo
+1237   12770  12827  1730   21261  336	  3702	71    81	 partitions
+1238   12771  12828  1759   219    3399   3711	72    82	 sched_debug
+1239   12772  12829  1781   21932  34	  3712	7288  83	 schedstat
+1240   12773  12830  18     21933  3414   3714	7289  84	 scsi
+1241   12774  12831  1817   21950  3415   3716	7290  85	 self
+1242   12775  12832  1818   21957  3473   3718	7291  8576	 slabinfo
+1243   12776  12833  1819   22	   3474   3723	7292  86	 softirqs
+1244   12777  12834  1820   220    3475   38	7293  87	 stat
+1245   12778  12835  1821   22177  3476   3854	7294  88	 swaps
+1246   12779  12836  1822   23	   35	  388	7295  8850	 sys
+12723  12780  12837  1827   23615  3515   389	7296  89	 sysrq-trigger
+12724  12781  12838  1853   23691  3516   39	7297  9		 sysvipc
+12725  12782  12839  18610  23767  3517   4	7298  90	 timer_list
+12726  12783  12840  18641  23768  3518   40	7299  91	 timer_stats
+12727  12784  12841  18666  23844  3519   41	73    92	 tty
+12728  12785  12842  18667  23886  3520   42	7300  93	 uptime
+12729  12786  12843  19     23914  3521   43	7301  9484	 version
+12730  12787  12844  1915   24	   3524   4366	7302  98	 vmallocinfo
+12731  12788  12845  1947   2413   3526   4367	7303  99	 vmstat
+12732  12789  12846  19556  2440   3527   4370	7304  acpi	 zoneinfo
+12733  12790  12847  19580  2444   3528   44	7305  buddyinfo
+12734  12791  12848  19581  2492   3529   45	7306  bus
+12735  12792  12849  19623  25	   3530   46	7307  cgroups
+12736  12793  12850  19716  2532   3531   47	7308  cmdline
+(py27) -bash-4.1$ ls -l /proc
+total 0
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 1
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 10
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 100
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 101
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 102
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 103
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 10333
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 10498
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 105
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 106
+dr-xr-xr-x  8 root     root       0 Oct 10 14:49 10894
+dr-xr-xr-x  8 kefang   ki         0 Oct 10 14:49 10933
+dr-xr-xr-x  8 kefang   ki         0 Oct 10 14:49 10934
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 11
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 11035
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1119
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1123
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1126
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1129
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1133
+dr-xr-xr-x  8 root     bin        0 Oct  9 11:03 11414
+dr-xr-xr-x  8 root     bin        0 Oct  9 11:03 11497
+dr-xr-xr-x  8 root     root       0 Oct 10 14:51 11533
+dr-xr-xr-x  8 root     bin        0 Sep 11 17:49 11578
+dr-xr-xr-x  8 root     bin        0 Oct  9 11:03 11580
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:51 11582
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:51 11583
+dr-xr-xr-x  8 root     bin        0 Oct  9 11:03 11584
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 12
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1232
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1233
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1235
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1236
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1237
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1238
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1239
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1240
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1241
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1242
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1243
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1244
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1245
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1246
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12723
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12724
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12725
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12726
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12727
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12728
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12729
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12730
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12731
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12732
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12733
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12734
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12735
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12736
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12737
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12738
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12739
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12740
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12741
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12742
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12743
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12744
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12745
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12746
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12747
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12748
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12749
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12750
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12751
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12752
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12753
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12754
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12755
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12756
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12757
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12758
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12759
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12760
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12761
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12762
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12763
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12764
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12765
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12766
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12767
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12768
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12769
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12770
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12771
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12772
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12773
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12774
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12775
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12776
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12777
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12778
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12779
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12780
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12781
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12782
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12783
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12784
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12785
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12786
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12787
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12788
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 12789
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12790
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12791
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12792
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12793
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12794
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12795
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12796
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12797
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12798
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12799
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12800
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12801
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12802
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12803
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12804
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12805
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12806
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12807
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12808
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12809
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12810
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12811
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12812
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12813
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12814
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12815
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12816
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12817
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12818
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12819
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12820
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12821
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12822
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12823
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12824
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12825
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12826
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12827
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12828
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12829
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12830
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12831
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12832
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12833
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12834
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12835
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12836
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12837
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12838
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12839
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12840
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12841
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12842
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12843
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12844
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12845
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12846
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12847
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12848
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12849
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12850
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12851
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 12852
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 13
+dr-xr-xr-x  8 awright  ki         0 Oct 10 10:59 1321
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 13480
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1351
+dr-xr-xr-x  8 awright  ki         0 Oct 10 10:59 1358
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 138
+dr-xr-xr-x  8 root     root       0 Oct 10 14:56 13993
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 14
+dr-xr-xr-x  8 swmclau2 ki         0 Oct 10 14:57 14023
+dr-xr-xr-x  8 swmclau2 ki         0 Oct 10 14:56 14024
+dr-xr-xr-x  8 root     root       0 Oct 10 14:57 14189
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:57 14216
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:57 14217
+dr-xr-xr-x  8 amantz   ki         0 Oct  9 11:30 14393
+dr-xr-xr-x  8 root     root       0 Oct 10 14:58 14692
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:58 14705
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:58 14706
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 15:04 14823
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 15
+dr-xr-xr-x  8 awright  ki         0 Oct 10 10:59 1508
+dr-xr-xr-x  8 postfix  postfix    0 Oct 10 15:04 15198
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 16
+dr-xr-xr-x  8 buson    screen     0 Oct  9 11:30 16243
+dr-xr-xr-x  8 buson    gl         0 Oct  9 11:30 16244
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1637
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1671
+dr-xr-xr-x  8 swmclau2 ki         0 Oct 10 15:04 16758
+dr-xr-xr-x  8 swmclau2 ki         0 Oct 10 15:04 16791
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 17
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1705
+dr-xr-xr-x  8 awright  ki         0 Oct 10 13:30 17117
+dr-xr-xr-x  8 named    named      0 Oct  9 11:03 1730
+dr-xr-xr-x  8 rpc      rpc        0 Oct  9 11:03 1759
+dr-xr-xr-x  8 rpcuser  rpcuser    0 Oct  9 11:03 1781
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 18
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1817
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1818
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1819
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1820
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1821
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1822
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1827
+dr-xr-xr-x  8 dbus     dbus       0 Oct  9 11:03 1853
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 18610
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 18641
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 18666
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 18667
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 19
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1915
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1947
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 19556
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 19580
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 19581
+dr-xr-xr-x  8 awright  ki         0 Oct 10 13:36 19623
+dr-xr-xr-x  8 awright  ki         0 Oct 10 13:36 19716
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 1974
+dr-xr-xr-x  8 amantz   ki         0 Oct  9 11:03 1976
+dr-xr-xr-x  8 awright  ki         0 Oct 10 13:37 19888
+dr-xr-xr-x  8 root     root       0 Oct  8 01:30 1991
+dr-xr-xr-x  8 awright  ki         0 Oct 10 13:37 19919
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 2
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 20
+dr-xr-xr-x  8 echarles ek         0 Oct  9 11:03 2003
+dr-xr-xr-x  8 echarles ek         0 Oct  9 11:03 2004
+dr-xr-xr-x  8 nscd     nscd       0 Oct  8 01:30 2010
+dr-xr-xr-x  8 root     root       0 Oct 10 15:19 20174
+dr-xr-xr-x  8 buson    gl         0 Oct 10 15:19 20198
+dr-xr-xr-x  8 buson    gl         0 Oct 10 15:19 20199
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2028
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2033
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2035
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2036
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2037
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2040
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2042
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 20437
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 20438
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2044
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2046
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2048
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2049
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2051
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 20683
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2070
+dr-xr-xr-x  8 echarles ek         0 Oct  9 11:30 20708
+dr-xr-xr-x  8 echarles ek         0 Oct  9 11:30 20709
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 21
+dr-xr-xr-x  8 amantz   ki         0 Oct  9 11:30 21259
+dr-xr-xr-x  8 buson    gl         0 Oct 10 15:19 21261
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 219
+dr-xr-xr-x  8 mornkr   screen     0 Oct  9 11:30 21932
+dr-xr-xr-x  8 mornkr   ki         0 Oct  9 11:30 21933
+dr-xr-xr-x  8 mornkr   ki         0 Oct  9 11:30 21950
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 22
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 220
+dr-xr-xr-x  8 root     root       0 Oct  9 11:30 22177
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 23
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23691
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23767
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23768
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23844
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23886
+dr-xr-xr-x  8 awright  ki         0 Oct 10 15:25 23934
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 15:25 23944
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 24
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2413
+dr-xr-xr-x  8 ntp      ntp        0 Oct  9 10:58 2440
+dr-xr-xr-x  8 echarles ek         0 Oct  9 11:03 2444
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2492
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 25
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2532
+dr-xr-xr-x  8 root     root       0 Oct 10 12:19 25647
+dr-xr-xr-x  8 mmeyer   gl         0 Oct 10 12:19 25650
+dr-xr-xr-x  8 mmeyer   gl         0 Oct 10 12:19 25651
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 26
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2643
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 27
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2722
+dr-xr-xr-x  8 postfix  postfix    0 Oct  9 11:03 2736
+dr-xr-xr-x  8 root     root       0 Oct 10 14:01 27377
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:01 27401
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:01 27402
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2746
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2756
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:04 27598
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2768
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 14:02 27759
+dr-xr-xr-x  8 daemon   bin        0 Oct  9 11:03 2784
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 28
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2875
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2876
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2877
+dr-xr-xr-x  8 root     root       0 Oct 10 12:28 28982
+dr-xr-xr-x  8 mmeyer   gl         0 Oct 10 12:28 28985
+dr-xr-xr-x  8 mmeyer   gl         0 Oct 10 12:28 28986
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 29
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 2962
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:30 29877
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 3
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 30
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 31
+dr-xr-xr-x  8 root     bin        0 Oct  9 11:30 31772
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 32
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 33
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 336
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3399
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 34
+dr-xr-xr-x  8 jmyles   ki         0 Oct  9 11:03 3414
+dr-xr-xr-x  8 jmyles   ki         0 Oct  9 11:03 3415
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3473
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3474
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3475
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3476
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 35
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3515
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3516
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3517
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3518
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3519
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3520
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3521
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3524
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3526
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3527
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3528
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3529
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3530
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3531
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3532
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3533
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3534
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3535
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3536
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3537
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3538
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3539
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3540
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3541
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3542
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3543
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3544
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3545
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3546
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3549
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3550
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3551
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3552
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3553
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3554
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3555
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3556
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3557
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3564
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3565
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3580
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 36
+dr-xr-xr-x  8 ganglia  root       0 Oct  8 01:30 3600
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3625
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 367
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 368
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 37
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3702
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3711
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3712
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3714
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3716
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3718
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 3723
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 38
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:03 3854
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 388
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 389
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 39
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 4
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 40
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 41
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 42
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 43
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 4366
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 4367
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 4370
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 44
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 45
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 46
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 47
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 48
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 483
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 49
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 5
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 50
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 51
+dr-xr-xr-x  8 postfix  postfix    0 Oct  9 11:03 5109
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 52
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 53
+dr-xr-xr-x  8 root     root       0 Oct 10 11:12 5305
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 11:12 5320
+dr-xr-xr-x  8 jmyles   ki         0 Oct 10 11:12 5321
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 54
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 55
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 56
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 57
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 58
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 59
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 6
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 60
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 61
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 62
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 63
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 64
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 642
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 65
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 657
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 66
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 67
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 68
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 69
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 7
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 70
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 71
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 72
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7288
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7289
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7290
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7291
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7292
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7293
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7294
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7295
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7296
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7297
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7298
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7299
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 73
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7300
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7301
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7302
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7303
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7304
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7305
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7306
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7307
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7308
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7309
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7310
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7311
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7312
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7313
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7314
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7315
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7316
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7317
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7318
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7319
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7320
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7321
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7322
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7323
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7324
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7325
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7326
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7327
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7328
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7329
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7330
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7398
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 74
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7486
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 75
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 76
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 77
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 78
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 7890
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 79
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 8
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 80
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 81
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 82
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 83
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 84
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 85
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:03 8576
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 86
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 87
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 88
+dr-xr-xr-x  8 awright  ki         0 Oct 10 11:30 8850
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 89
+dr-xr-xr-x  8 root     root       0 Oct 10 11:19 9
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 90
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 91
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 92
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 93
+dr-xr-xr-x  8 awright  ki         0 Oct  9 11:03 9484
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 98
+dr-xr-xr-x  8 root     root       0 Oct  9 11:03 99
+dr-xr-xr-x 10 root     root       0 Sep 11 17:21 acpi
+-r--r--r--  1 root     root       0 Oct 10 15:25 buddyinfo
+dr-xr-xr-x  6 root     root       0 Sep 11 10:21 bus
+-r--r--r--  1 root     root       0 Oct 10 15:25 cgroups
+-r--r--r--  1 root     root       0 Sep 11 17:21 cmdline
+-r--r--r--  1 root     root       0 Oct 10 15:25 cpuinfo
+-r--r--r--  1 root     root       0 Oct 10 15:25 crypto
+-r--r--r--  1 root     root       0 Oct 10 15:25 devices
+-r--r--r--  1 root     root       0 Oct 10 15:25 diskstats
+-r--r--r--  1 root     root       0 Oct 10 15:25 dma
+dr-xr-xr-x  2 root     root       0 Oct 10 15:25 driver
+-r--r--r--  1 root     root       0 Oct 10 15:25 execdomains
+-r--r--r--  1 root     root       0 Oct 10 15:25 fb
+-r--r--r--  1 root     root       0 Oct 10 15:25 filesystems
+dr-xr-xr-x 10 root     root       0 Oct 10 14:56 fs
+-r--r--r--  1 root     root       0 Oct 10 15:25 interrupts
+-r--r--r--  1 root     root       0 Oct 10 15:25 iomem
+-r--r--r--  1 root     root       0 Oct 10 15:25 ioports
+dr-xr-xr-x  2 root     root       0 Oct 10 15:25 ipmi
+dr-xr-xr-x 23 root     root       0 Oct 10 15:25 irq
+-r--r--r--  1 root     root       0 Oct 10 15:25 kallsyms
+-r--------  1 root     root    4096 Oct 10 15:25 kcore
+-r--r--r--  1 root     root       0 Oct 10 15:25 key-users
+-r--r--r--  1 root     root       0 Oct 10 15:25 keys
+-r--------  1 root     root       0 Sep 11 17:21 kmsg
+-r--------  1 root     root       0 Oct 10 15:25 kpagecount
+-r--------  1 root     root       0 Oct 10 15:25 kpageflags
+-r--r--r--  1 root     root       0 Oct 10 15:25 loadavg
+-r--r--r--  1 root     root       0 Oct 10 15:25 locks
+-r--r--r--  1 root     root       0 Sep 11 17:49 mdstat
+-r--r--r--  1 root     root       0 Oct 10 15:25 meminfo
+-r--r--r--  1 root     root       0 Oct 10 15:25 misc
+-r--r--r--  1 root     root       0 Oct 10 15:25 modules
+lrwxrwxrwx  1 root     root      11 Oct 10 15:25 mounts -> self/mounts
+-r--r--r--  1 root     root       0 Oct 10 15:25 mtd
+-rw-r--r--  1 root     root       0 Oct 10 15:25 mtrr
+lrwxrwxrwx  1 root     root       8 Oct 10 15:25 net -> self/net
+-r--r--r--  1 root     root       0 Oct 10 15:25 pagetypeinfo
+-r--r--r--  1 root     root       0 Oct 10 15:25 partitions
+-r--r--r--  1 root     root       0 Oct 10 15:25 sched_debug
+-r--r--r--  1 root     root       0 Oct 10 15:25 schedstat
+dr-xr-xr-x  2 root     root       0 Oct 10 15:25 scsi
+lrwxrwxrwx  1 root     root      64 Oct 10 15:13 self -> 23944
+-rw-r--r--  1 root     root       0 Oct 10 15:25 slabinfo
+-r--r--r--  1 root     root       0 Oct 10 15:25 softirqs
+-r--r--r--  1 root     root       0 Oct 10 15:25 stat
+-r--r--r--  1 root     root       0 Oct 10 15:25 swaps
+dr-xr-xr-x  1 root     root       0 Sep 11 10:21 sys
+--w-------  1 root     root       0 Oct 10 15:25 sysrq-trigger
+dr-xr-xr-x  2 root     root       0 Oct 10 15:25 sysvipc
+-r--r--r--  1 root     root       0 Oct 10 15:25 timer_list
+-rw-r--r--  1 root     root       0 Oct 10 15:25 timer_stats
+dr-xr-xr-x  4 root     root       0 Oct 10 15:25 tty
+-r--r--r--  1 root     root       0 Oct 10 15:25 uptime
+-r--r--r--  1 root     root       0 Oct 10 15:25 version
+-r--------  1 root     root       0 Oct 10 15:25 vmallocinfo
+-r--r--r--  1 root     root       0 Oct 10 15:25 vmstat
+-r--r--r--  1 root     root       0 Oct 10 15:25 zoneinfo
+(py27) -bash-4.1$ ./proc/slabinfo
+-bash: ./proc/slabinfo: No such file or directory
+(py27) -bash-4.1$ ls -l | wc -l
+5
+(py27) -bash-4.1$ pwd
+/u/ki/jmyles/newdir/files_for_practice/executables
+(py27) -bash-4.1$ ls
+alphabet.txt  reverse  tar  wget
+(py27) -bash-4.1$ ls -l
+total 4
+-rw-r--r-- 1 jmyles ki 27 Sep 22  2015 alphabet.txt
+-rw-r--r-- 1 jmyles ki 76 Sep 23  2015 reverse
+-rw-r--r-- 1 jmyles ki 74 Sep 17  2015 tar
+-rwxr--r-- 1 jmyles ki 75 Sep 17  2015 wget
+(py27) -bash-4.1$ ls
+alphabet.txt  reverse  tar  wget
+(py27) -bash-4.1$ cat alphabet.txt 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+(py27) -bash-4.1$ ./reverse
+-bash: ./reverse: Permission denied
+(py27) -bash-4.1$ chmod u+x ./reverse 
+(py27) -bash-4.1$ ./reverse
+
+(py27) -bash-4.1$ ./reverse < alphabet.txt
+
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+(py27) -bash-4.1$ ./reverse < alphabet.txt > cat.txt
+(py27) -bash-4.1$ cat cat.tt
+cat: cat.tt: No such file or directory
+(py27) -bash-4.1$ ls
+alphabet.txt  cat.txt  reverse	tar  wget
+(py27) -bash-4.1$ cat cat.txt
+
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+(py27) -bash-4.1$ ./reverse < alphabet.txt >> cat.txt
+(py27) -bash-4.1$ ./reverse < alphabet.txt >> cat.txt
+(py27) -bash-4.1$ cat cat.txt
+
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+(py27) -bash-4.1$ 
+(py27) -bash-4.1$ cd 
+(py27) -bash-4.1$ cd repos/y3c
+-bash: cd: repos/y3c: No such file or directory
+(py27) -bash-4.1$ ls
+Desktop  anaconda3  intel  jupyter_notebook_config.py  newdir  oldest  repositories
+(py27) -bash-4.1$ cd repositories
+(py27) -bash-4.1$ ls
+18_05_30__real_COSMOS.ipynb  libffi-3.2.1	  sompz-3-23	 y3cosmos
+README			     libffi-3.2.1.tar.gz  sompz-3-23-v2  ztf-alert-matching
+des-science-sompz	     photoz-tomography	  sompz-3-31
+destest			     sompz		  sompz_cpd
+healpix_util		     sompz-3-22		  wizard
+(py27) -bash-4.1$ pwd
+/u/ki/jmyles/repositories
+(py27) -bash-4.1$ cd des-science-sompz/sompz
+(py27) -bash-4.1$ ls
+__init__.py   cell.py	   cellprob.pyc   plots.py   som.pyc
+__init__.pyc  cell.pyc	   fluxmodes.py   plots.pyc
+__pycache__   cellprob.py  fluxmodes.pyc  som.py
+(py27) -bash-4.1$ grep 'import numpy' ./*.py
+./cell.py:import numpy as np
+./cellprob.py:import numpy as np
+./fluxmodes.py:import numpy as np
+./plots.py:import numpy as np
+./som.py:import numpy as np
+(py27) -bash-4.1$ cd ../
+(py27) -bash-4.1$ ls
+README.md  data  sompz	test
+(py27) -bash-4.1$ cd ../
+(py27) -bash-4.1$ ls
+18_05_30__real_COSMOS.ipynb  libffi-3.2.1	  sompz-3-23	 y3cosmos
+README			     libffi-3.2.1.tar.gz  sompz-3-23-v2  ztf-alert-matching
+des-science-sompz	     photoz-tomography	  sompz-3-31
+destest			     sompz		  sompz_cpd
+healpix_util		     sompz-3-22		  wizard
+(py27) -bash-4.1$ cd
+(py27) -bash-4.1$ ls
+Desktop  anaconda3  intel  jupyter_notebook_config.py  newdir  oldest  repositories
+(py27) -bash-4.1$ cd newdir/
+(py27) -bash-4.1$ ls
+files_for_practice  files_for_practice.tar.gz
+(py27) -bash-4.1$ cd files_for_practice/
+(py27) -bash-4.1$ ls
+executables  random_files
+(py27) -bash-4.1$ cd random_files/
+(py27) -bash-4.1$ ls
+ab.avi		   dolorum.avi	   fugit.gif	   non.mov	   quis.webm
+accusamus.html	   ea.mp4	   grepdata.txt    non.tiff	   quisquam.csv
+ad.avi		   eaque.csv	   harum.js	   nostrum.jpg	   quos.wav
+ad.webm		   earum.webm	   harum.mov	   nulla.mov	   rem.png
+amet.mp4	   eligendi.flac   hic.js	   numquam.mp4	   repellat.avi
+animi.html	   enim.jpg	   hic.tiff	   occaecati.tiff  repudiandae.js
+animi.mp4	   enim.wav	   illo.js	   odio.csv	   repudiandae.txt
+architecto.jpeg    eos.bmp	   impedit.avi	   odio.gif	   rerum.jpeg
+aspernatur.mov	   eos.txt	   impedit.html    odit.flac	   sed.txt
+at.avi		   error.bmp	   impedit.tiff    officiis.bmp    similique.png
+at.flac		   esse.csv	   in.jpg	   omnis.bmp	   similique.webm
+atque.bmp	   est		   in.txt	   omnis.gif	   sit.csv
+atque.css	   est.avi	   incidunt.mov    omnis.json	   sit.js
+aut.html	   est.bmp	   inventore.gif   omnis.txt	   sit.webm
+aut.js		   est.csv	   inventore.wav   omnis.webm	   soluta.mov
+autem.flac	   est.flac	   iure.wav	   optio.avi	   sunt.webm
+autem.jpeg	   est.gif	   libero.webm	   optio.flac	   tempora.jpeg
+clients.txt	   est.mp4	   magnam.avi	   pariatur.mov    tempore.gif
+consequatur.html   est.txt	   magnam.webm	   pariatur.webm   temporibus.css
+consequatur.jpeg   et.avi	   maiores.png	   placeat.json    temporibus.json
+consequatur.webm   et.flac	   maxime.bmp	   porro.tiff	   totam.gif
+consequuntur.json  et.json	   maxime.webm	   possimus.csv    ullam.css
+corrupti.jpg	   et.mp4	   minima.wav	   possimus.wav    users.txt
+cumque.tiff	   et.wav	   molestiae.csv   praesentium.js  ut.avi
+cupiditate.mp4	   eum.bmp	   molestiae.flac  quaerat.mov	   ut.flac
+debitis.png	   eum.mov	   molestiae.wav   quasi.mp4	   ut.jpg
+debitis.txt	   eveniet.avi	   molestias.css   qui.bmp	   ut.png
+debitis.wav	   ex.csv	   molestias.html  qui.gif	   vitae.mp4
+dicta.avi	   ex.webm	   mp3		   qui.js	   voluptas.csv
+distinctio.avi	   excepturi.jpeg  nam.wav	   qui.wav	   voluptas.tiff
+distinctio.js	   expedita.jpeg   natus.flac	   quia.flac	   voluptate.tiff
+dolor.jpg	   expedita.wav    nesciunt.avi    quia.html	   voluptatem.bmp
+dolor.mov	   explicabo.html  nihil.jpg	   quia.wav	   voluptatem.html
+dolorem.gif	   explicabo.mp4   nihil.tiff	   quidem.flac	   voluptatem.txt
+doloremque.wav	   fugiat.wav	   nisi.gif	   quis.avi
+dolores.avi	   fugiat.webm	   non.css	   quis.mov
+dolores.mov	   fugit.avi	   non.jpeg	   quis.wav
+(py27) -bash-4.1$ ls *.txt
+clients.txt  eos.txt  grepdata.txt  omnis.txt	     sed.txt	voluptatem.txt
+debitis.txt  est.txt  in.txt	    repudiandae.txt  users.txt
+(py27) -bash-4.1$ emacs grepdata.txt 
+emacs: Terminal type "dumb" is not powerful enough to run Emacs.
+It lacks the ability to position the cursor.
+If that is not the actual type of terminal you have,
+use the Bourne shell command `TERM=... export TERM' (C-shell:
+`setenv TERM ...') to specify the correct type.  It may be necessary
+to do `unset TERMINFO' (C-shell: `unsetenv TERMINFO') as well.(py27) -bash-4.1$ 
+(py27) -bash-4.1$ 
+(py27) -bash-4.1$ cat grepdata.txt 
+Sep. 17, 2013
+Esperanza High School
+1830 N. Kellog Dr.
+Anaheim, CA 92807-1281
+Steve Marshal
+714-555-7870 X7310
+aztecwrestling@example.com
+Brian Fortenbaugh
+714-555-7870 x7309
+
+Sep. 24, 2013
+Sonora High School
+401 S. Palm St.
+La Habra, CA 90631 
+Carl Hohl (aka Krazy Rabbit)
+562-555-9800
+
+Oct. 1, 2013 
+Lakewood High School
+440 Briercrest Ave.
+Lakewood, CA 90713-2013
+Andy Miramontes
+562-555-1281
+
+Oct. 8, 2013
+North Torrance High School
+2013 W. 182nd
+Torrance, CA 90504
+Don Henderson
+310-555-4412
+
+Oct. 15, 2013
+El Dorado High School
+1651 N. Valencia Ave.
+Placentia, CA 90631
+Steve Lawson
+714-555-5350 x2134
+Lawsonhawk@example.com
+
+Nov. 12, 2013
+Rosemead High School
+9063 E. Sepulveda Dr.
+Rosemead, CA 91770
+Daren de Heras
+daren103@example.com
+(py27) -bash-4.1$ sed 's/CA/MA/g' grepdata.txt 
+Sep. 17, 2013
+Esperanza High School
+1830 N. Kellog Dr.
+Anaheim, MA 92807-1281
+Steve Marshal
+714-555-7870 X7310
+aztecwrestling@example.com
+Brian Fortenbaugh
+714-555-7870 x7309
+
+Sep. 24, 2013
+Sonora High School
+401 S. Palm St.
+La Habra, MA 90631 
+Carl Hohl (aka Krazy Rabbit)
+562-555-9800
+
+Oct. 1, 2013 
+Lakewood High School
+440 Briercrest Ave.
+Lakewood, MA 90713-2013
+Andy Miramontes
+562-555-1281
+
+Oct. 8, 2013
+North Torrance High School
+2013 W. 182nd
+Torrance, MA 90504
+Don Henderson
+310-555-4412
+
+Oct. 15, 2013
+El Dorado High School
+1651 N. Valencia Ave.
+Placentia, MA 90631
+Steve Lawson
+714-555-5350 x2134
+Lawsonhawk@example.com
+
+Nov. 12, 2013
+Rosemead High School
+9063 E. Sepulveda Dr.
+Rosemead, MA 91770
+Daren de Heras
+daren103@example.com
+(py27) -bash-4.1$ ls -l | awk '{print $1}'
+total
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+(py27) -bash-4.1$ ps
+  PID TTY          TIME CMD
+11583 pts/5    00:00:00 bash
+26899 pts/5    00:00:00 ps
+(py27) -bash-4.1$ ps ux 
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+jmyles    3414  0.0  0.0 105520   640 ?        S    Oct01   0:00 sshd: jmyles@pts/11
+jmyles    3415  0.0  0.0 109432   224 pts/11   Ss+  Oct01   0:00 -bash
+jmyles    5320  0.0  0.0 105660  2076 ?        S    11:12   0:00 sshd: jmyles@pts/4
+jmyles    5321  0.0  0.0 109432  1984 pts/4    Ss   11:12   0:00 -bash
+jmyles   11582  0.0  0.0 105520  2016 ?        S    14:51   0:00 sshd: jmyles@pts/5
+jmyles   11583  0.0  0.0 109436  1940 pts/5    Ss   14:51   0:00 -bash
+jmyles   14216  0.0  0.0 105520  2020 ?        S    14:57   0:00 sshd: jmyles@pts/17
+jmyles   14217  0.0  0.0 109432  1960 pts/17   Ss+  14:57   0:00 -bash
+jmyles   14705  0.0  0.0 105520  2020 ?        S    14:58   0:00 sshd: jmyles@pts/18
+jmyles   14706  0.0  0.0 109432  1960 pts/18   Ss   14:58   0:00 -bash
+jmyles   14823  0.0  0.0 252288 15192 pts/18   S+   14:58   0:00 emacs -nw cell.py
+jmyles   26929  0.0  0.0 109140  1044 pts/5    R+   15:33   0:00 ps ux
+jmyles   27401  0.0  0.0 105520  2016 ?        S    14:01   0:00 sshd: jmyles@pts/16
+jmyles   27402  0.0  0.0 109432  1964 pts/16   Ss   14:01   0:00 -bash
+jmyles   27598  0.0  0.0 252272 15208 pts/16   S+   14:01   0:00 emacs -nw /u/ki/jmyle
+jmyles   27759  7.2 20.0 8290708 5630052 pts/4 Sl+  14:02   6:38 /u/ki/jmyles/anaconda
+(py27) -bash-4.1$ kill -9 14823
+(py27) -bash-4.1$ man ps
+WARNING: terminal is not fully functional
+PS(1)                         Linux User's Manual                        PS(1)
+
+NAME
+       ps - report a snapshot of the current processes.
+
+SYNOPSIS
+       ps [options]
+
+DESCRIPTION
+       ps displays information about a selection of the active processes. If
+       you want a repetitive update of the selection and the displayed
+       information, use top(1) instead.
+
+       This version of ps accepts several kinds of options:
+       1   UNIX options, which may be grouped and must be preceded by a dash.
+       2   BSD options, which may be grouped and must not be used with a
+           dash.
+       3   GNU long options, which are preceded by two dashes.
+
+       Options of different types may be freely mixed, but conflicts can
+       appear. There are some synonymous options, which are functionally
+       identical, due to the many standards and ps implementations that this
+       ps is compatible with.
+
+       Note that "ps -aux" is distinct from "ps aux". The POSIX and UNIX
+       standards require that "ps -aux" print all processes owned by a user
+       named "x", as well as printing all processes that would be selected by
+       the -a option. If the user named "x" does not exist, this ps may
+       interpret the command as "ps aux" instead and print a warning. This
+       behavior is intended to aid in transitioning old scripts and habits.
+       It is fragile, subject to change, and thus should not be relied upon.
+
+       By default, ps selects all processes with the same effective user ID
+       (euid=EUID) as the current user and associated with the same terminal
+       as the invoker. It displays the process ID (pid=PID), the terminal
+       associated with the process (tname=TTY), the cumulated CPU time in
+       [dd-]hh:mm:ss format (time=TIME), and the executable name (ucmd=CMD).
+       Output is unsorted by default.
+
+       The use of BSD-style options will add process state (stat=STAT) to the
+       default display and show the command args (args=COMMAND) instead of
+       the executable name. You can override this with the PS_FORMAT
+       environment variable. The use of BSD-style options will also change
+       the process selection to include processes on other terminals (TTYs)
+       that are owned by you; alternately, this may be described as setting
+       the selection to be the set of all processes filtered to exclude
+       processes owned by other users or not on a terminal. These effects are
+       not considered when options are described as being "identical" below,
+       so -M will be considered identical to Z and so on.
+
+:
+
+^PS(1)                         Linux User's Manual                        PS(1)
+
+NAME
+       ps - report a snapshot of the current processes.
+
+SYNOPSIS
+       ps [options]
+
+DESCRIPTION
+       ps displays information about a selection of the active processes. If
+       you want a repetitive update of the selection and the displayed
+       information, use top(1) instead.
+
+       This version of ps accepts several kinds of options:
+       1   UNIX options, which may be grouped and must be preceded by a dash.
+       2   BSD options, which may be grouped and must not be used with a
+           dash.
+       3   GNU long options, which are preceded by two dashes.
+
+       Options of different types may be freely mixed, but conflicts can
+       appear. There are some synonymous options, which are functionally
+       identical, due to the many standards and ps implementations that this
+       ps is compatible with.
+
+       Note that "ps -aux" is distinct from "ps aux". The POSIX and UNIX
+       standards require that "ps -aux" print all processes owned by a user
+       named "x", as well as printing all processes that would be selected by
+       the -a option. If the user named "x" does not exist, this ps may
+       interpret the command as "ps aux" instead and print a warning. This
+       behavior is intended to aid in transitioning old scripts and habits.
+       It is fragile, subject to change, and thus should not be relied upon.
+
+       By default, ps selects all processes with the same effective user ID
+       (euid=EUID) as the current user and associated with the same terminal
+       as the invoker. It displays the process ID (pid=PID), the terminal
+       associated with the process (tname=TTY), the cumulated CPU time in
+       [dd-]hh:mm:ss format (time=TIME), and the executable name (ucmd=CMD).
+       Output is unsorted by default.
+
+       The use of BSD-style options will add process state (stat=STAT) to the
+       default display and show the command args (args=COMMAND) instead of
+       the executable name. You can override this with the PS_FORMAT
+       environment variable. The use of BSD-style options will also change
+       the process selection to include processes on other terminals (TTYs)
+       that are owned by you; alternately, this may be described as setting
+       the selection to be the set of all processes filtered to exclude
+       processes owned by other users or not on a terminal. These effects are
+       not considered when options are described as being "identical" below,
+       so -M will be considered identical to Z and so on.
+
+       Except as described below, process selection options are additive. The
+       default selection is discarded, and then the selected processes are
+:q
+(py27) -bash-4.1$ (py27) -bash-4.1$ 
