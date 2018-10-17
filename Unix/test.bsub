@@ -1,0 +1,8 @@
+###!/bin/bash
+#BSUB -q short 
+#BSUB -W 0:05
+#BSUB -J test 
+#BSUB -oo /u/ki/swmclau2/Git/BootCamp/Unix/test.out
+#BSUB -n 8
+
+python test.py 

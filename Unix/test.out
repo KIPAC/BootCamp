@@ -1,0 +1,54 @@
+Hi!
+fell0262
+
+------------------------------------------------------------
+Sender: LSF System <lsf@fell0262>
+Subject: Job 237993: <test> in cluster <slac> Done
+
+Job <test> was submitted from host <ki-ls10> by user <swmclau2> in cluster <slac> at Wed Oct 17 10:57:18 2018.
+Job was executed on host(s) <1*fell0262>, in queue <short>, as user <swmclau2> in cluster <slac> at Wed Oct 17 10:57:19 2018.
+                            <1*fell0265>
+                            <1*fell0276>
+                            <1*fell0137>
+                            <1*fell0145>
+                            <1*fell0148>
+                            <1*fell0184>
+                            <1*fell0028>
+</u/ki/swmclau2> was used as the home directory.
+</u/ki/swmclau2/Git/BootCamp/Unix> was used as the working directory.
+Started at Wed Oct 17 10:57:19 2018.
+Terminated at Wed Oct 17 10:57:20 2018.
+Results reported at Wed Oct 17 10:57:20 2018.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+###!/bin/bash
+#BSUB -q short 
+#BSUB -W 0:05
+#BSUB -J test 
+#BSUB -oo /u/ki/swmclau2/Git/BootCamp/Unix/test.out
+#BSUB -n 8
+
+python test.py 
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.24 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   1 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) is above this job summary.
+
