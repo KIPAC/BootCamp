@@ -1,6 +1,6 @@
 # Setting up a Mac computer to use for research
 
-## Remote Connetion Tools
+## Remote Connection Tools
 
 Some stuff about using a terminal.
 

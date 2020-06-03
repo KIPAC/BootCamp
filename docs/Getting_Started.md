@@ -31,7 +31,7 @@ connecting your computer to a notebook server running at slac.
 
 [MacOS](macos_setup.md)
 
-[Windows](docs/windows_setup.md)
+[Windows](windows_setup.md)
 
 As usual, if you are using a linux computer you are on you own.
 
@@ -40,16 +40,45 @@ As usual, if you are using a linux computer you are on you own.
 
 [Rubin Observatory Camera](rubin_camera.md)
 
-[Dark Energy Science Collaboration](docs/desc.md)
+[Dark Energy Science Collaboration](desc.md)
 
-[Exoplanets](docs/exoplanets.md)
+[Exoplanets](exoplanets.md)
 
-[LUX/LZ](docs/lux_lz.md)
+[LUX/LZ](lux_lz.md)
 
-[CDMS](docs/cdms.md)
+[CDMS](cdms.md)
 
 
+## Specific Tutorials
 
+
+### Tutorials about using Unix
+
+[Basic Unix Tutorial](../Unix/Unix (1).ipynb)
+
+[Writing Shell Scriprts in Unix](../Unix/Unix (2).ipynb)
+
+
+### Tutorials about using Python
+
+[Basics](../python/Python (1).ipynb)
+
+[More Basics](../python/Python (2).ipynb)
+
+[Numerical and Scientific Python](../python/Python (3).ipynb)
+
+[Objects Oriented Programming](../python/Python (4).ipynb)
+
+[Basics](../python/Python (5).ipynb)
+
+
+### Tutorials about using particular Python Packages
+
+[Astropy](../python/Astropy.ipynb)
+
+[Matplotlib and Data visualization](../python/Matplotlib and Data Visualization Tutorial.ipynb)
+
+[Scipy](../python/Scipy.ipynb)
 
 
 
