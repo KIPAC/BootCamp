@@ -12,9 +12,9 @@ share certain resources.
 Depending on if you are working at SLAC or on campus (or both) you
 will have computing accounts for either or both places.
 
-[SLAC computing accounts](docs/slac_computing.md)
+[SLAC computing accounts](slac_computing.md)
 
-[Stanford coputing accounts](docs/stanford_computing.md)
+[Stanford coputing accounts](stanford_computing.md)
 
 
 ## Setting up your computer 
