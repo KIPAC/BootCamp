@@ -54,7 +54,7 @@ As usual, if you are using a linux computer you are on you own.
 
 ### Tutorials about using Unix
 
-[Basic Unix Tutorial](../Unix/Unix \(1\).ipynb)
+[Basic Unix Tutorial]("../Unix/Unix (1).ipynb")
 
 [Writing Shell Scriprts in Unix](../Unix/Unix (2).ipynb)
 
