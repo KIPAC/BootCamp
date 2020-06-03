@@ -54,29 +54,29 @@ As usual, if you are using a linux computer you are on you own.
 
 ### Tutorials about using Unix
 
-[Basic Unix Tutorial]("../Unix/Unix (1).ipynb")
+[Basic Unix Tutorial](../Unix/Unix%20(1).ipynb)
 
-[Writing Shell Scriprts in Unix](../Unix/Unix (2).ipynb)
+[Writing Shell Scriprts in Unix](../Unix/Unix%20(2).ipynb)
 
 
 ### Tutorials about using Python
 
-[Basics](../python/Python (1).ipynb)
+[Basics](../python/Python%20(1).ipynb)
 
-[More Basics](../python/Python (2).ipynb)
+[More Basics](../python/Python%20(2).ipynb)
 
-[Numerical and Scientific Python](../python/Python (3).ipynb)
+[Numerical and Scientific Python](../python/Python%20(3).ipynb)
 
-[Objects Oriented Programming](../python/Python (4).ipynb)
+[Objects Oriented Programming](../python/Python%20(4).ipynb)
 
-[Basics](../python/Python (5).ipynb)
+[Basics](../python/Python%20(5).ipynb)
 
 
 ### Tutorials about using particular Python Packages
 
 [Astropy](../python/Astropy.ipynb)
 
-[Matplotlib and Data visualization](../python/Matplotlib and Data Visualization Tutorial.ipynb)
+[Matplotlib and Data visualization](../python/Matplotlib%20and%20Data%20Visualization%20Tutorial.ipynb)
 
 [Scipy](../python/Scipy.ipynb)
 
