@@ -39,9 +39,13 @@ As usual, if you are using a linux computer you are on you own.
 ## Project specific setup pages
 
 [Rubin Observatory Camera](docs/rubin_camera.md)
+
 [Dark Energy Science Collaboration](docs/desc.md)
+
 [Exoplanets](docs/exoplanets.md)
+
 [LUX/LZ](docs/lux_lz.md)
+
 [CDMS](docs/cdms.md)
 
 
