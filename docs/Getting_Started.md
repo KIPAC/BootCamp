@@ -61,15 +61,15 @@ As usual, if you are using a linux computer you are on you own.
 
 ### Tutorials about using Python
 
-[Basics](../python/Python%20(1).ipynb)
+[Basics](../Python/Python%20(1).ipynb)
 
-[More Basics](../python/Python%20(2).ipynb)
+[More Basics](../Python/Python%20(2).ipynb)
 
-[Numerical and Scientific Python](../python/Python%20(3).ipynb)
+[Numerical and Scientific Python](../Python/Python%20(3).ipynb)
 
-[Objects Oriented Programming](../python/Python%20(4).ipynb)
+[Objects Oriented Programming](../Python/Python%20(4).ipynb)
 
-[Basics](../python/Python%20(5).ipynb)
+[Basics](../Python/Python%20(5).ipynb)
 
 
 ### Tutorials about using particular Python Packages
