@@ -29,7 +29,7 @@ computers.   It is also very likely that you will need to be able to
 run Jupyter analysis notebooks both on your computer, and by
 connecting your computer to a notebook server running at slac.
 
-[MacOS](docs/macos_setup.md)
+[MacOS](macos_setup.md)
 
 [Windows](docs/windows_setup.md)
 
@@ -38,7 +38,7 @@ As usual, if you are using a linux computer you are on you own.
 
 ## Project specific setup pages
 
-[Rubin Observatory Camera](docs/rubin_camera.md)
+[Rubin Observatory Camera](rubin_camera.md)
 
 [Dark Energy Science Collaboration](docs/desc.md)
 
