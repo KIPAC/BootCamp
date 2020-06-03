@@ -3,7 +3,7 @@
 This page is intended to help you get started using our computing
 resources to do research while you are at KIPAC.
 
-There are several different projeces ongoing at KIPAC and each of them
+There are several different projects ongoing at KIPAC and each of them
 has its own computing resources and environment.  However, we all do
 share certain resources.
 
@@ -14,7 +14,7 @@ will have computing accounts for either or both places.
 
 [SLAC computing accounts](slac_computing.md)
 
-[Stanford coputing accounts](stanford_computing.md)
+[Stanford computing accounts](stanford_computing.md)
 
 
 ## Setting up your computer 
@@ -27,7 +27,7 @@ However, at a minimum, you will almost certainly need to be able
 to connect terminal and graphics to remote (i.e., SLAC / Stanford)
 computers.   It is also very likely that you will need to be able to
 run Jupyter analysis notebooks both on your computer, and by
-connecting your computer to a notebook server running at slac.
+connecting your computer to a notebook server running at SLAC.
 
 [MacOS](macos_setup.md)
 
@@ -56,7 +56,7 @@ As usual, if you are using a linux computer you are on you own.
 
 [Basic Unix Tutorial](../Unix/Unix%20(1).ipynb)
 
-[Writing Shell Scriprts in Unix](../Unix/Unix%20(2).ipynb)
+[Writing Shell Scripts in Unix](../Unix/Unix%20(2).ipynb)
 
 
 ### Tutorials about using Python
@@ -83,3 +83,12 @@ As usual, if you are using a linux computer you are on you own.
 
 
 
+
+<!--  LocalWords:  Jupyter ipynb Astropy Matplotlib Scipy desc.md
+ -->
+<!--  LocalWords:  slac_computing.md stanford_computing.md lux_lz.md
+ -->
+<!--  LocalWords:  macos_setup.md windows_setup.md rubin_camera.md
+ -->
+<!--  LocalWords:  cdms.md
+ -->
