@@ -1,1 +1,1 @@
-# Computring Environment for Vera Rubin Observatory Camera Work
+# Computing Environment for Vera Rubin Observatory Camera Work
