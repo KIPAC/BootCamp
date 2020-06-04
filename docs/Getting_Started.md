@@ -58,6 +58,7 @@ As usual, if you are using a linux computer you are on you own.
 
 [Writing Shell Scripts in Unix](../Unix/Unix%20(2).ipynb)
 
+[Missing semester you tube channel about computing](https://www.youtube.com/channel/UCuXy5tCgEninup9cGplbiFw)
 
 ### Tutorials about using Python
 
@@ -92,3 +93,6 @@ As usual, if you are using a linux computer you are on you own.
  -->
 <!--  LocalWords:  cdms.md
  -->
+
+
+
