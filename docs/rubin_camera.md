@@ -47,32 +47,27 @@ In particular that will define a command that sets the parts of the
 LSST software enviroment that you will need.   You can invoke that
 command like so:
 
-"""
-$ lsst_setup
-"""
+    $ lsst_setup
+
 
 At that point you can check that things are set up by asking the shell
 which version of python is active:
 
-"""
-$ which python
-/cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2020_01/python/miniconda3-4.7.10/envs/lsst-scipipe-4d7b902/bin/python
-"""
+    $ which python
+    /cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2020_01/python/miniconda3-4.7.10/envs/lsst-scipipe-4d7b902/bin/python
 
 
 You can also make sure that your python enviroment is working by doing
 something like this:  (note, in this case the python command prompt is "> > >"):
 
-"""
-$ python
-Python 3.7.2 (default, Dec 29 2018, 06:19:36) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
->>> import lsst
->>> lsst.__file__
-'/cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2020_01/stack/miniconda3-4.7.10-4d7b902/Linux64/fgcmcal/19.0.0+17/python/lsst/__init__.py'
-"""
+    $ python
+    Python 3.7.2 (default, Dec 29 2018, 06:19:36) 
+    [GCC 7.3.0] :: Anaconda, Inc. on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> 
+    >>> import lsst
+    >>> lsst.__file__
+    '/cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2020_01/stack/miniconda3-4.7.10-4d7b902/Linux64/fgcmcal/19.0.0+17/python/lsst/__init__.py'
 
 That just tells you where the LSST software is located.
 
