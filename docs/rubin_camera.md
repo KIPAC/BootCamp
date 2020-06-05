@@ -18,9 +18,11 @@ log in to SLAC.
 
 Typically I do this by running this command from a terminal or xterm
 window on Mac laptop.  
-"""
-ssh -tt -Y username@centos7.slac.stanford.edu
-"""
+
+    $ ssh -tt -Y username@centos7.slac.stanford.edu
+
+Note: the "$" represents the unix command prompt.
+
 See [this page](windows_setup.md) for how to do that from windows.
 
 One time only, edit the hidden configuration file '.bash_profile' in your home
@@ -29,16 +31,14 @@ directory to invoke the group configuration file.
 You can invoke an editor like so (note: the "$" represents the unix
 command prompt)::
 
-"""
-$ nano .bash_profile
-"""
+    $ nano .bash_profile
 
 You can find links to more information about various unix text editors
 [here](text_editors.md)
 
 You will want to add this line to your '.bash_profile' file.
 
-"""source /nfs/farm/g/lsst/u1/group_config/setup_dm_stack.bashrc"""
+    source /nfs/farm/g/lsst/u1/group_config/setup_dm_stack.bashrc
 
 That will set you up with the same configuration the rest of the
 camera data analysis group is using.
