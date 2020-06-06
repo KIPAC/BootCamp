@@ -1,10 +1,20 @@
-# Computing Environment for Vera Rubin Observyatory Camera Work
+# Computing Environment for Vera Rubin Observatory Camera Work
 
 To analyze test data from the LSST camera you will need a set of
 software tools known as the LSST Data Management (DM) stack, as well
 as a few other tools.  These tools are largely set up for you in the 
 
 ## Jupyter Notebook Setup.
+
+You can connect to the jupyter cluster by
+pointing your web browser at this url:
+[https://jupyter.slac.stanford.edu/](https://jupyter.slac.stanford.edu/)
+
+The landing page will ask you which image you want to spawn.
+To get started you probably want to select the "recommend" LSST image.
+
+Then depending on what you want to do  the LSST software or just want to use a
+python notebook you can run either the "LSST" or "python" kernels.
 
 
 ## Interactive shell setup.
@@ -44,11 +54,10 @@ That will set you up with the same configuration the rest of the
 camera data analysis group is using.
 
 In particular that will define a command that sets the parts of the
-LSST software enviroment that you will need.   You can invoke that
+LSST software environment that you will need.   You can invoke that
 command like so:
 
     $ lsst_setup
-
 
 At that point you can check that things are set up by asking the shell
 which version of python is active:
@@ -56,8 +65,7 @@ which version of python is active:
     $ which python
     /cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2020_01/python/miniconda3-4.7.10/envs/lsst-scipipe-4d7b902/bin/python
 
-
-You can also make sure that your python enviroment is working by doing
+You can also make sure that your python environment is working by doing
 something like this:  (note, in this case the python command prompt is "> > >"):
 
     $ python
@@ -72,16 +80,15 @@ something like this:  (note, in this case the python command prompt is "> > >"):
 That just tells you where the LSST software is located.
 
 
+### Accessing the Jupyter hub home area in the interactive shell.
+
+You can access your jupyter hub home area in an interactive shell by
+navigating to:
+
+    cd /gpfs/slac/lsst/fs1/u/username
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!--  LocalWords:  Jupyter slac_computing.md windows_setup.md lsst
+ -->
+<!--  LocalWords:  lsst_setup
+ -->
