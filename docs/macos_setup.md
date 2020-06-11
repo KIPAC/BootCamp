@@ -25,11 +25,13 @@ The tools that you are most likely to need on your personal computer in order to
 
 ### Anaconda
 
-Anaconda is a combination of python and a software package management system.   You can either install the full anaconda package or your can use install miniconda, a mininal installer that bootstraps itself and only installs the package you need.
+Anaconda is a combination of python and a software package management system.   You can either install the full anaconda package or your caninstall miniconda, a mininal installer that bootstraps itself and only installs the package you need.
 
 [anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
 
 [minconda](https://docs.conda.io/en/latest/miniconda.html)
+
+If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 
 
 ### git
