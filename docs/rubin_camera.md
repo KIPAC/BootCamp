@@ -2,7 +2,7 @@
 
 To analyze test data from the LSST camera you will need a set of
 software tools known as the LSST Data Management (DM) stack, as well
-as a few other tools.  These tools are largely set up for you already and easy to activate.
+as a few other tools.  These tools are largely set up for you already and are easy to activate.
 
 ## Jupyter Notebook Setup.
 
