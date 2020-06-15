@@ -1,16 +1,24 @@
 # Setting up a Mac computer to use for research
 
-## Remote Connection Tools
+## Basic tools
+
+You will need some way to manage files, connect to SLAC computers and
+open display windows.  Generally that will be a combination of using
+terminal windows and an X-windows systems for graphics.
 
 ### Terminal
 
 The simplest command line environment on a mac is the built in terminal (Applications -> Utilities -> Terminal)
 
-Here are a couple of simple guides for using teminals:
+Here are a couple of simple guides for using terminals:
 
 [MacPaw guide](https://macpaw.com/how-to/use-terminal-on-mac)
 
 [Macworld guide](https://www.macworld.co.uk/how-to/mac-software/how-use-terminal-on-mac-3608274)
+
+You can explore those more later.  For now you just need to be able to
+open an terminal 
+
 
 ### X Windows system (X-Quartz)
 
@@ -19,25 +27,94 @@ we recommend you install it if you are using a mac laptop.
 
 [X Quartz](https://www.xquartz.org)
 
-## Local Tools
 
-The tools that you are most likely to need on your personal computer in order to do research are anaconda,which is a combination of python and a software package management system and git, which is a software versioning system.
+### Text editor
 
-### Anaconda
+You are going to need some way to edit files.   I strongly recommend
+that you do not use "TextEdit" to try and edit software files.
 
-Anaconda is a combination of python and a software package management system.   You can either install the full anaconda package or your caninstall miniconda, a mininal installer that bootstraps itself and only installs the package you need.
+There are many different options, here is a summary of some of your
+choices:
+
+[Text Editors](text_editors.md)
+
+
+## Other Tools
+
+The tools that you are most likely to need on your personal computer
+in order to do research "git", which is a file versioning system and
+"conda", which is a combination of python and a software package management system.
+
+### git
+
+git is a versioning system that is pretty ubiquitous in our
+work.  It lets many users work together to manage a large set of
+files.  This can be set of software, or a paper draft, or some
+documentation, or pretty much any kind of files. 
+
+I recommend using the instructions under using "Install Git Using
+Xcode" on the page below:
+
+[Installation](https://phoenixnap.com/kb/install-git-on-mac)
+
+[Documentation](https://xkcd.com/1597)
+
+Running the following command in a terminal window will setup git and
+use it to "clone" this BootCamp.   The lines that start with '#'
+are comments.
+
+    # Install xcode and git if you have not already done so
+    xcode-select --install
+    # "Clone" this repository into a directory called "BootCamp" 
+	git clone https://github.com/KIPAC/BootCamp.git
+   
+
+
+### Anaconda or Miniconda and Jupyter Notebooks
+
+conda is a combination of python and a software package management
+system.   You can either install the full anaconda package or your can
+install miniconda, a minimal installer that bootstraps itself and only installs the package you need.
+
+
+#### Anaconda
+
+You can download anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
+
+I recommend installing anaconda either '/Applications'.
+
+Then you can do Applications -> Anaconda-Navigator
+
+Then, in the "Home" tab of  Anaconda-Navigator you can select "Launch" 
+in the "Notebook" app box.  This will start a local notebook servers
+and open a web-browser window in your home directory.
+
+
+#### Miniconda
+
+You can download miniconda from there, (make sure to get the python 3 version):
 
 [minconda](https://docs.conda.io/en/latest/miniconda.html)
 
 If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 
+Running the following command in a terminal window will install a minimal set of packages to
+let you run jupyter notebooks locally.  The lines that start with '#'
+are comments.
 
-### git
+    # Activate conda, if you ran conda init when you installe
+    # miniconda you don't need to do this
+    . /Users/echarles/miniconda3/etc/profile.d/conda.sh 
+    # Create a conda environment to work these examples
+    conda create --name kipac python
+    # Install the stuff you need (from the conda-forge software 'channel')
+    conda install --name kipac -c conda-forge numpy scipy jupyter
 
-git is a software versioning system that is pretty ubiqitous in our work. 
 
-[Installation](https://phoenixnap.com/kb/install-git-on-mac)
 
-[Documentation](https://xkcd.com/1597)
+<!--  LocalWords:  Miniconda Jupyter minconda kipac conda-forge numpy
+ -->
+<!--  LocalWords:  scipy
+ -->
