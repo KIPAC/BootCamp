@@ -60,21 +60,24 @@ Xcode" on the page below:
 [Documentation](https://xkcd.com/1597)
 
 Running the following command in a terminal window will setup git and
-use it to "clone" this BootCamp.   The lines that start with '#'
-are comments.
+use it to "clone" this BootCamp:
 
     # Install xcode and git if you have not already done so
     xcode-select --install
     # "Clone" this repository into a directory called "BootCamp" 
 	git clone https://github.com/KIPAC/BootCamp.git
-   
 
+(The lines that start with '#' are comments.)
+   
 
 ### Anaconda or Miniconda and Jupyter Notebooks
 
 conda is a combination of python and a software package management
 system.   You can either install the full anaconda package or your can
 install miniconda, a minimal installer that bootstraps itself and only installs the package you need.
+
+Note that the full anaconda distribution comes with a lot of tutorials
+and extra things, so you might want to install that version.
 
 
 #### Anaconda
@@ -91,6 +94,18 @@ Then, in the "Home" tab of  Anaconda-Navigator you can select "Launch"
 in the "Notebook" app box.  This will start a local notebook servers
 and open a web-browser window in your home directory.
 
+##### Setting up anaconda for in a terminal window 
+
+Once you have installed anaconda you can also set up your terminal
+windows to activate conda for that terminal by doing this:
+
+    # Activate conda
+    . /Applications/anaconda3/etc/profile.d/conda.sh
+    # "Activate" the "base" conda environment
+	conda activate
+
+(The lines that start with '#' are comments.)
+
 
 #### Miniconda
 
@@ -100,19 +115,43 @@ You can download miniconda from there, (make sure to get the python 3 version):
 
 If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 
-Running the following command in a terminal window will install a minimal set of packages to
-let you run jupyter notebooks locally.  The lines that start with '#'
-are comments.
+Running the following commands in a terminal window will install a minimal set of packages to
+let you run jupyter notebooks locally. 
 
-    # Activate conda, if you ran conda init when you installe
+    # Activate conda, if you ran conda init when you installed
     # miniconda you don't need to do this
     . /Users/echarles/miniconda3/etc/profile.d/conda.sh 
     # Create a conda environment to work these examples
     conda create --name kipac python
     # Install the stuff you need (from the conda-forge software 'channel')
     conda install --name kipac -c conda-forge numpy scipy jupyter
+    # "Activate" the kipac environment
+	conda activate kipac
 
+(The lines that start with '#' are comments.)
 
+### Running a notebook
+
+f you want to start a notebook you can then do:
+
+    # Start a notebook server in the current directory that you are in 
+    jupyter notebook 
+
+Once you have started a notebook server you will want to navigate to
+the notebook that you want to run.  Let's start with the basic python
+/ notebook tutorial.   In your browser you can selection that notebook
+to open it.
+
+BootCamp ->Python -> Python (1).ipynb
+
+Note.   You can get you notebook browser to start up in
+a different folder in a few different ways.   For example you could:
+
+    # Version one, go to a directory and start the notebook server there
+    cd ~/BootCamp/Python
+	jupyter notebook
+    # Version two, use the --notebook-dir option
+    jupyter notebook --notebook-dir="BootCamp/Python"
 
 <!--  LocalWords:  Miniconda Jupyter minconda kipac conda-forge numpy
  -->
