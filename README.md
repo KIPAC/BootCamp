@@ -36,7 +36,8 @@ connecting your computer to a notebook server running at SLAC.
 
 [Windows](docs/windows_setup.md)
 
-As usual, if you are using a linux computer you are on you own.
+If you are using a linux personal computer it would be great if you started some documenation 
+on what you needed to do to get started.
 
 
 ## Project specific setup pages
