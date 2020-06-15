@@ -23,7 +23,7 @@ Typically you will want to use the centos7 interactive cluster at
 SLAC.  That cluster has access to the camera data and
 the data analysis software.
 
-See [this page](docs/slac_computing.md) about setting up your computer to remotely 
+See [this page](slac_computing.md) about setting up your computer to remotely 
 log in to SLAC. 
 
 Typically I do this by running this command from a terminal or xterm
@@ -33,7 +33,7 @@ window on Mac laptop.
 
 Note: the "$" represents the unix command prompt.
 
-See [this page](docs/windows_setup.md) for how to do that from windows.
+See [this page](windows_setup.md) for how to do that from windows.
 
 One time only, edit the hidden configuration file '.bash_profile' in your home
 directory to invoke the group configuration file.
