@@ -84,8 +84,11 @@ As usual, if you are using a linux computer you are on you own.
 
 [Scipy](Python/Scipy.ipynb)
 
+### Tutorials about using other tools
 
+[git](Git/README.md)
 
+[SQL](SQL/sql-intro.md)
 
 
 <!--  LocalWords:  Jupyter ipynb Astropy Matplotlib Scipy desc.md
