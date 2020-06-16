@@ -86,7 +86,7 @@ You can download anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
 
-I recommend installing anaconda either '/Applications'.
+I recommend installing anaconda under '/Applications'.
 
 Then you can do Applications -> Anaconda-Navigator
 
