@@ -19,7 +19,7 @@ And you should be able to run the conda command, in addition to seeing the appen
 
     conda install jupyter numpy scipy matplotlib nb_conda_kernels
 
-In general it is a good idea to learn how to manage environments for running different software packages. Nb_conda_kernels allows you to modify which environment a script is being run in, from inside the jupyter notebook, which is very convenient when working with multiple environments.
+In general it is a good idea to learn how to [manage environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for running different software packages. Nb_conda_kernels allows you to modify which environment a script is being run in, from inside the jupyter notebook, which is very convenient when working with multiple environments.
 
 Jupyter offers the ability to remotely edit and run scripts in a nice interactive interface, with inline plotting, and saved variables, eliminating the need for slow VNCs or buggy X-window interfaces. The jupyter notebook server by default creates a webserver which can only be accessed by the localhost (user on the machine) so we configure it with some options for remote access
 
