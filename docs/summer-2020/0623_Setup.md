@@ -28,4 +28,4 @@ Running a jupyter notebook on an existing remote server
 
 Running a terminal window and connecting to a remote computer
 
-Starting a jupyter server remotely an connecting to it
+Starting a jupyter server remotely and connecting to it
