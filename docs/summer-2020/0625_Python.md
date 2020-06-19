@@ -16,6 +16,10 @@ it to others.  And it is always good to pratice explaining things clearly, that 
 
 ### Goals
 
+### Resources and links
+
+### Stuff to do ahead of time
+
 ### Activities
 
 
