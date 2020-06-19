@@ -4,9 +4,9 @@
 
 [Calendar](https://calendar.google.com/calendar/embed?src=sl1lhbut8qilv2r0r5on0pk33g%40group.calendar.google.com)
 
-[Students and mentors Slack Channel](https://KIPAC/slack.com/messages/summer-students-plus-mentors)
+[Students and mentors Slack Channel](https://KIPAC.slack.com/messages/summer-students-plus-mentors)
 
-[Students only Slack Channel](https://KIPAC/slack.com/messages/summer-students)
+[Students only Slack Channel](https://KIPAC.slack.com/messages/summer-students)
 
 
 ### Lectures, tutorials and other sessions
