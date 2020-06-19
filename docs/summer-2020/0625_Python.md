@@ -16,11 +16,28 @@ it to others.  And it is always good to pratice explaining things clearly, that 
 
 ### Goals
 
+This is mainly some demonstrations of some basic python code and functions, and some tools to find your way around in python.
+
 ### Resources and links
+
 
 ### Stuff to do ahead of time
 
-### Activities
+Make sure that you can run jupyter notebooks on your computer.  
 
+Make sure that you can start a terminal and run python from it.
+
+### Activities and demos
+
+Running [Basic python notebook](../../Python/Python%20(1).ipynb)
+
+Running [python data structures notebook](../../Python/Python%20(1).ipynb)
+
+Starting a terminal and running python in the terminal.
+
+Running python scripts from a terminal.
+
+
+ 
 
 
