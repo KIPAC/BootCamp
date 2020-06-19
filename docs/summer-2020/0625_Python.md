@@ -14,7 +14,9 @@ Conversely, even if you are quite proficient at something, you can still really 
 it to others.  And it is always good to pratice explaining things clearly, that is really a core skill for scientists.
 
 
+### Goals
 
+### Activities
 
 
 
