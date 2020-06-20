@@ -19,8 +19,8 @@ with a specific Linux system.
 Following these instructions will set-up a Linux system within your Windows laptop. A few notes regarding this:
 * Your Linux home directory will be: `/home/<your_linux_username>`. 
 * Since you have a Linux system, installation of new programs should be done following Linux installation
-  instructions and using the Linux terminal tools such as `apt-get`; these will usually be installed in `/usr/bin/`.
-* Your Windows files will be located at: `/mnt/c/Users/<your_windows_username>`. Here you can find your usual "Documents",
+  instructions and using the Linux terminal tools such as `apt-get`.
+* Your Windows files will be located at: `/mnt/c/Users/<your_windows_username>/`. Here you can find your usual "Documents",
   "Pictures", "Downloads", etc. folders you should be familiar with.
 
 
@@ -50,6 +50,7 @@ The Windows 10 Linux shell should already have 'vim' installed and accessible fr
 `which vim`
 
 which should print: 
+
 `/usr/bin/vim`
 
 If you wish to use `emacs` instead, I recommend you install via your Linux terminal:
@@ -105,7 +106,7 @@ You can download anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
-I recommend installing anaconda under your home directory '/home/<your_linux_username>'.
+I recommend installing anaconda under your home directory '~/Applications/'
 
 
 
@@ -115,7 +116,7 @@ Once you have installed anaconda you can also set up your terminal
 windows to activate conda for that terminal by doing this:
 
     # Activate conda
-    . /home/<your_linux_username>/anaconda3/etc/profile.d/conda.sh
+    . ~/Applications/anaconda3/etc/profile.d/conda.sh
     # "Activate" the "base" conda environment
 	conda activate
 
@@ -147,7 +148,7 @@ let you run jupyter notebooks locally.
 
 ### Set Up Jupyter Notebook
 
-You will need to perform a few extra steps to get Jupyter to use your favorit web browser when displaying notebooks.
+You will need to perform a few extra steps to get Jupyter to use your favorite web browser when displaying notebooks.
 
 You need to define a BROWSER variable. To do this open up `~/.bashrc` using your text editor and add the following line:
 
@@ -160,6 +161,9 @@ Next enter the following commands:
 
      jupyter notebook --generate-config
      echo c.NotebookApp.use_redirect_file = False >> ~/.jupyter/jupyter_notebook_config.py
+
+You may need to close and restart your terminal for the changes to take effect.
+
 
 ### Running a notebook
 
