@@ -16,6 +16,13 @@ Unix-like terminal on Windows, using the following guide:
 You can choose from a number of Linux systems, though Ubuntu is recommended, unless you have previous experience
 with a specific Linux system.
 
+Following these instructions will set-up a Linux system within your Windows laptop. A few notes regarding this:
+* Your Linux home directory will be: `/home/<your_linux_username>`. 
+* Since you have a Linux system, installation of new programs should be done following Linux installation
+  instructions and using the Linux terminal tools such as `apt-get`; these will usually be installed in `/usr/bin/`.
+* Your Windows files will be located at: `/mnt/c/Users/<your_windows_username>`. Here you can find your usual "Documents",
+  "Pictures", "Downloads", etc. folders you should be familiar with.
+
 
 ### X Windows system (VcXsrv Windows X Server)
 
@@ -45,7 +52,7 @@ The Windows 10 Linux shell should already have 'vim' installed and accessible fr
 which should print: 
 `/usr/bin/vim`
 
-If you wish to use 'emacs' instead, I recommend you install via your Linux terminal:
+If you wish to use `emacs` instead, I recommend you install via your Linux terminal:
 
 `sudo apt-get emacs`
 
@@ -65,7 +72,7 @@ documentation, or pretty much any kind of files.
 
 I recommend using the instructions under using "Installing Git on Ubuntu" on the page below:
 
-[Installation](https://phoenixnap.com/kb/install-git-on-mac)
+[Installation](https://phoenixnap.com/kb/how-to-install-git-on-ubuntu)
 
 [Documentation](https://xkcd.com/1597)
 
@@ -96,15 +103,11 @@ and extra things, so you might want to install that version.
 
 You can download anaconda from here:
 
-[anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
+[anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
-I recommend installing anaconda under '/Applications'.
+I recommend installing anaconda under your home directory '/home/<your_linux_username>'.
 
-Then you can do Applications -> Anaconda-Navigator
 
-Then, in the "Home" tab of  Anaconda-Navigator you can select "Launch" 
-in the "Notebook" app box.  This will start a local notebook servers
-and open a web-browser window in your home directory.
 
 ##### Setting up anaconda for in a terminal window 
 
@@ -112,7 +115,7 @@ Once you have installed anaconda you can also set up your terminal
 windows to activate conda for that terminal by doing this:
 
     # Activate conda
-    . /Applications/anaconda3/etc/profile.d/conda.sh
+    . /home/<your_linux_username>/anaconda3/etc/profile.d/conda.sh
     # "Activate" the "base" conda environment
 	conda activate
 
@@ -142,9 +145,26 @@ let you run jupyter notebooks locally.
 
 (The lines that start with '#' are comments.)
 
+### Set Up Jupyter Notebook
+
+You will need to perform a few extra steps to get Jupyter to use your favorit web browser when displaying notebooks.
+
+You need to define a BROWSER variable. To do this open up `~/.bashrc` using your text editor and add the following line:
+
+    export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+
+If you are using a different web browser than Chrome (example above) you will need to modify the path to point to the appropriate
+executable.
+
+Next enter the following commands:
+
+     jupyter notebook --generate-config
+     echo c.NotebookApp.use_redirect_file = False >> ~/.jupyter/jupyter_notebook_config.py
+
 ### Running a notebook
 
-f you want to start a notebook you can then do:
+
+If you want to start a notebook you can then do:
 
     # Start a notebook server in the current directory that you are in 
     jupyter notebook 
