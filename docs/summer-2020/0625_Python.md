@@ -5,7 +5,7 @@
 Based on the survey that you filled out, most of you have at 
 least some experience with python, and some of you have quite a bit of of exprience.
 
-I want to re-iterate the point I made yesterday, that you are each other's best resource.
+I want to re-iterate the point I made Tuesday, that you are each other's best resource.
 
 If you want to know how to do something, or why something isn't working, and you are stuck after a bit of trying, 
 then ask your fellow students.
