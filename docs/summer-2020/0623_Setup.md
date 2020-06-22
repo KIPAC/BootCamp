@@ -36,6 +36,8 @@ We expect that many of you have already done this.  In that case you can help ot
     
     - If you are familiar with git you can clone the repository, otherwise select "Download zip".  You will want to unpack the zip file into a place you can find it again easily.
 
+If you run into problems setting up any of these things, don't worry.  We've set aside some time today to work with people to get set up.
+
 ### Activities and demos
 
 - Running a jupyter notebook locally on your computer
