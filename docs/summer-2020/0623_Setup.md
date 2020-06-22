@@ -42,12 +42,20 @@ If you run into problems setting up any of these things, don't worry.  We've set
 
 - Running a jupyter notebook locally on your computer
 
+ - Using Anaconda
+ 
+ - Using the Terminal and Miniconda
+
 - Running a jupyter notebook on an existing remote server 
 
   - In this case the SLAC [jupyter hub](https://jupyter.slac.stanford.edu/)
 
 - Running a terminal window and connecting to a remote computer
 
-- Starting a jupyter server remotely and connecting to it
+  - In a terminal window 
+  
+      ssh -YK USERNAME@centos7.slac.stanford.edu
+
+- Starting a jupyter server remotely and connecting to it using the instructions [here](../jupyter_tunnel.md)   
 
 - Time permitting, start covering basics of python
