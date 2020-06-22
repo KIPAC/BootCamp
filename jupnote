@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# my id numbers
+localid=8888
+remoteid=8889
+
+# kill old old sessions
+pkill -u ${USER} -f "ssh -K -N"
+
+# start up jupyter remotely on the desired node
+ssh -K -N -f -L localhost:${localid}:localhost:${remoteid} ${USER}@"$1".slac.stanford.edu
+
