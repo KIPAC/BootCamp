@@ -28,14 +28,22 @@ We expect that many of you have already done this.  In that case you can help ot
 
    - terminal or terminal emulator program
 
-   - graphics handler
+   - graphics handler such as XQuartz or Cygwin
+   
+- Download or clone this project repository to your personal computer
+
+    - Click on the "Clone or download" button on this page [https://github.com/KIPAC/BootCamp]  
+    
+    - If you are familiar with git you can clone the repository, otherwise select "Download zip".  You will want to unpack the zip fill into a place you can find it again easily.
 
 ### Activities and demos
 
-Running a jupyter notebook locally on your computer
+- Running a jupyter notebook locally on your computer
 
-Running a jupyter notebook on an existing remote server
+- Running a jupyter notebook on an existing remote server
 
-Running a terminal window and connecting to a remote computer
+- Running a terminal window and connecting to a remote computer
 
-Starting a jupyter server remotely and connecting to it
+- Starting a jupyter server remotely and connecting to it
+
+- Time permitting, start covering basics of python
