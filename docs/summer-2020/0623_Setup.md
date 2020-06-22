@@ -34,7 +34,7 @@ We expect that many of you have already done this.  In that case you can help ot
 
     - Click on the "Clone or download" button on this page [https://github.com/KIPAC/BootCamp]  
     
-    - If you are familiar with git you can clone the repository, otherwise select "Download zip".  You will want to unpack the zip fill into a place you can find it again easily.
+    - If you are familiar with git you can clone the repository, otherwise select "Download zip".  You will want to unpack the zip file into a place you can find it again easily.
 
 ### Activities and demos
 
