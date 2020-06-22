@@ -16,9 +16,19 @@ We expect that many of you have already done this.  In that case you can help ot
 
 ### Stuff to do ahead of time
 
-Get Slack setup (KIPAC only)
+- Install Slack (if you don't have it already) and join the channels that your group will be using.  You might also want to join
 
-Install conda, python and jupyter on your personal computer (see the Windows and Mac setup above)
+  - [Students and mentors Slack Channel](https://KIPAC.slack.com/messages/summer-students-plus-mentors)
+
+  - [Students only Slack Channel](https://KIPAC.slack.com/messages/summer-students)
+
+- Follow either the Windows and Mac setup and install these three things on your personal computer:
+
+   - conda (Either anaconda or miniconda) including python and jupyter 
+
+   - terminal or terminal emulator program
+
+   - graphics handler
 
 ### Activities and demos
 
