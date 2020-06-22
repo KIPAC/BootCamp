@@ -55,6 +55,7 @@ on what you needed to do to get started.
 
 ## Specific Tutorials
 
+[Presentations for summer 2020](docs/summer-2020/README.md)
 
 ### Tutorials about using Unix
 
