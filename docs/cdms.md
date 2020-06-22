@@ -1,1 +1,1 @@
-# Computing Environment for CDMS Work]
+# Computing Environment for CDMS Work
