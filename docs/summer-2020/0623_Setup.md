@@ -42,9 +42,9 @@ If you run into problems setting up any of these things, don't worry.  We've set
 
 - Running a jupyter notebook locally on your computer
 
- - Using Anaconda
+  - Using Anaconda
  
- - Using the Terminal and Miniconda
+  - Using the Terminal and Miniconda
 
 - Running a jupyter notebook on an existing remote server 
 
