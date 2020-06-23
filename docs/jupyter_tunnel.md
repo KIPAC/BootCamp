@@ -20,7 +20,7 @@ machine.
 
 - On your local machine, one time only:
    - copy the jupnote file from this area to an area where you keep
-   useful scripts
+   useful scripts (for me that is ~/bin, aka /Users/echarles/bin)
    
    cp BootCamp/docs/jupnote ~/bin/jupnote
 
@@ -43,7 +43,7 @@ machine.
       centos7, you should take note of which node you actually connected
       to (e.g., cent7a, cent7b..)
       
-  - Invoke any setup scripts you need to access an enviroment with jupyter
+  - Invoke any setup scripts you need to access an enviroment with jupyter (for me it is the lsst environment) 
 
     lsst_setup
     
