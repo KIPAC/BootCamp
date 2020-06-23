@@ -52,7 +52,7 @@ If you run into problems setting up any of these things, don't worry.  We've set
 
 - Running a terminal window and connecting to a remote computer
 
-  - In a terminal window 
+  - In a terminal window you can connect to the SLAC machines with the following command (if you have an account)
   
       ssh -YK USERNAME@centos7.slac.stanford.edu
 
