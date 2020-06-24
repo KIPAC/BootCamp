@@ -20,6 +20,10 @@ This is mainly some demonstrations of some basic python code and functions, and 
 
 ### Resources and links
 
+There are a great many resources out there to start learning python.  Some of them are simple and clear, some are quite techinical.   I 
+just recommend you do a web search and find one that works for you.
+
+The [google tutorial](https://developers.google.com/edu/python/) is a decent mix of technical and simple.  
 
 ### Stuff to do ahead of time
 
@@ -31,7 +35,9 @@ Make sure that you can start a terminal and run python from it.
 
 Running [Basic python notebook](../../Python/Python%20(1).ipynb)
 
-Running [python data structures notebook](../../Python/Python%20(1).ipynb)
+Running [python data structures notebook](../../Python/Python%20(2).ipynb)
+
+Running [numpy and matplotlib notebook](../../Python/Python%20(3).ipynb)
 
 Starting a terminal and running python in the terminal.
 
