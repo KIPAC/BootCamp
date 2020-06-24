@@ -37,11 +37,11 @@ Running [Basic python notebook](../../Python/Python%20(1).ipynb)
 
 Running [python data structures notebook](../../Python/Python%20(2).ipynb)
 
-Running [numpy and matplotlib notebook](../../Python/Python%20(3).ipynb)
-
 Starting a terminal and running python in the terminal.
 
 Running python scripts from a terminal.
+
+If time permits:  Running [numpy and matplotlib notebook](../../Python/Python%20(3).ipynb)
 
 
  
