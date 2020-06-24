@@ -1,4 +1,4 @@
-print "I'm in a module"
+print ("I'm in a module")
 
 def exFunc():
-    print "I'm in a function"
+    print ("I'm in a function")
