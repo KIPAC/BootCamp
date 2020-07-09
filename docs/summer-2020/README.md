@@ -17,4 +17,6 @@
 
 [06/26 9am PDT](0626_Unix.md)Unix basics
 
+[07/09 9:30am PDF](coding_practice.md) Coding practice and software development
+
 
