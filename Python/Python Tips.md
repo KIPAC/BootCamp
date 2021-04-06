@@ -57,7 +57,7 @@ This notebook will work through those concepts:
 This notebook, the third in a series of notebooks about python, also
 has many useful numpy tips:
 
-[Numerical and Scientific Python](Python/Python%20(3).ipynb)
+[Numerical and Scientific Python](./Python%20(3).ipynb)
 
 
 ## Code linters
