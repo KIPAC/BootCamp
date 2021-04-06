@@ -23,6 +23,15 @@ Collaboration (DESC) seminar, collects 4 tips that have helped me
 vastly improve my python experience.
 
 
+## Installation 
+
+You can use conda to easily install the packages you will need to run these examples
+
+    conda create -n kipac -y -c conda-forge python=3.8 numpy pylint flake8 black jupyter
+    git clone https://github.com/KIPAC/BootCamp
+    cd BootCamp/Python
+
+
 ## Unlocking the power of numpy
 
 From the numpy website: https://numpy.org/
