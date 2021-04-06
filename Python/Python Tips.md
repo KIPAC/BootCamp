@@ -58,8 +58,7 @@ This notebook will work through those concepts:
 This notebook, the third in a series of notesbooks about python, also
 has many useful numpy tips:
 
-[Numpy and scipy section of python tutorial](./Python\ \(3\).ipynb)
-
+[Numerical and Scientific Python](Python/Python%20(3).ipynb)
 
 
 ## Code linters
@@ -77,8 +76,6 @@ There are a number of python 'linters'.
 This unix-based demo will show how to use a couple of linters:
 
 [Linting](./Linting.md)
-
-
 
 
 ## Using pdb: the python debugger and python -i
