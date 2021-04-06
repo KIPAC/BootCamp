@@ -2,12 +2,12 @@
 
 Python is really good at some things.
 
-However, python is also very bad at a lot of the thing that you want to do all the time.  That is probably the single
+However, python is also very bad at a lot of the things that you want to do all the time.  That is probably the single
 most useful thing to understand about python.
 
 In short,
   1. python is great for scripting and terrible for computations.
-  2. python is great for get started with simple projects and lousy
+  2. python is great for getting started with simple projects and lousy
      for maintaing large, complicated projects.  This is doubly true
      of jupyter notebooks.
 
@@ -47,14 +47,14 @@ From the numpy website: https://numpy.org/
 The first two points are certainly true.  The third point is
 debatable, but the intention is certainly there.
 
-So, to use numpy well, it help to understand the "vectorization,
+So, to use numpy well, it helps to understand the "vectorization,
 indexing, and broadcasting concepts".
 
 This notebook will work through those concepts:
 
 [Numpy concepts](./Numpy.ipynb)
 
-This notebook, the third in a series of notesbooks about python, also
+This notebook, the third in a series of notebooks about python, also
 has many useful numpy tips:
 
 [Numerical and Scientific Python](Python/Python%20(3).ipynb)
@@ -93,7 +93,7 @@ reproduce some of that flexibility in regular python.
 ## Profilers and timers
 
 Profiling / timing code is always useful, as it help identify
-ineffciencices.  It is doubly important when using python.
+inefficiencies.  It is doubly important when using python.
 
 Because python is very slow compared to the underlying code
 that libraries such as "numpy" and "scipy" use, it is possible to have
@@ -115,7 +115,7 @@ This tutorial lives in the https://github.com/KIPAC/BootCamp
 repository.  The other tutorials in this repository were
 orignally developed in support of a several session "BootCamp" for
 new members of the Kavli Institute for Particle Astrophyscis and
-Cosmology (KIPAC) at Stanford and SLAC National Lab.   Many of these
+Cosmology (KIPAC) at Stanford and SLAC National Accelerator Laboratory.   Many of these
 tutorials were updated in 2020 to help incoming summer students get
 started with their interships while working remotely.
 
