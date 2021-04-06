@@ -27,6 +27,7 @@ Collaboration (DESC) seminar, collects 4 tips for python newcomers to help impro
 You can use conda to easily install the packages you will need to run these examples
 
     conda create -n kipac -y -c conda-forge python=3.8 numpy pylint flake8 black jupyter
+    conda activate kipac
     git clone https://github.com/KIPAC/BootCamp
     cd BootCamp/Python
 
