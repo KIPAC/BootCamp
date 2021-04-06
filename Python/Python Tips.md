@@ -16,11 +16,19 @@ rather the thing that you use to interact with some piece of code that
 will actually do your computations.
 
 For 2) the point is that people have developed tools to make it easier
-to use python in complicated projects.
+to use python in large, complicated projects.
 
 This tutorial, originally presented as a Dark Energy Science
-Collaboration (DESC) seminar, collects 4 tips that have helped me
-vastly improve my python experience.
+Collaboration (DESC) seminar, collects 4 tips for python newcomers to help improve their python experience.
+
+
+## Installation 
+
+You can use conda to easily install the packages you will need to run these examples
+
+    conda create -n kipac -y -c conda-forge python=3.8 numpy pylint flake8 black jupyter
+    git clone https://github.com/KIPAC/BootCamp
+    cd BootCamp/Python
 
 
 ## Unlocking the power of numpy
@@ -45,12 +53,10 @@ This notebook will work through those concepts:
 
 [Numpy concepts](./Numpy.ipynb)
 
-
 This notebook, the third in a series of notesbooks about python, also
 has many useful numpy tips:
 
-[Numpy and scipy section of python tutorial](./Python (3).ipynb)
-
+[Numerical and Scientific Python](Python/Python%20(3).ipynb)
 
 
 ## Code linters
@@ -70,16 +76,15 @@ This unix-based demo will show how to use a couple of linters:
 [Linting](./Linting.md)
 
 
-
-
 ## Using pdb: the python debugger and python -i
 
 One of the main reasons that peoople tend to continue developing a project
-in jupyter notebooks long past the point where they should probably
+in jupyter notebooks past the point where they should probably
 switch over to making a python package and modules is that notebooks
 provide a flexible and interactive debugging enviroment.
 
-This unix-based demo will show how to use the interactive prompt and pdb:
+This unix-based demo will show how to use the interactive prompt and pdb to 
+reproduce some of that flexibility in regular python.
 
 [Debugging](./Debugging.md)
 
@@ -91,7 +96,7 @@ ineffciencices.  It is doubly important when using python.
 
 Because python is very slow compared to the underlying code
 that libraries such as "numpy" and "scipy" use, it is possible to have
-a piece of code take many times longer b/c of the specific
+a piece of code take many times (up to thousand of times) longer b/c of the specific
 implementation.
 
 Using Profiling / timing lets you see how the actual execution
