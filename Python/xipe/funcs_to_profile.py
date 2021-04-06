@@ -172,6 +172,9 @@ def matmul_v8(m1, m2):
                 out[i, j] += m1[i,k] * m2[k,j]
     return np.array(out)
 
+def matmul_v9(m1, m2):
+    return np.sum(m1[:,None,:] * m2.T[None,:,:], axis=2)
+
 
 def time_func(func, n, ref_time):
     t0 = time.time()
@@ -217,11 +220,11 @@ def time_matmul_func(func, m1, m2, check, ref_time):
 SUM_FUNCS = [sum_v0, sum_v1, sum_v2, sum_v3, sum_v4]
 CUMULSUM_FUNCS = [cumul_sum_v0, cumul_sum_v1, cumul_sum_v2, cumul_sum_v3, cumul_sum_v4, cumul_sum_v5, cumul_sum_v6]
 SQ_FUNCS = [squares_v0, squares_v1, squares_v2, squares_v3, squares_v4]
-MATMUL_FUNCS = [matmul_v0, matmul_v1, matmul_v2, matmul_v3, matmul_v4, matmul_v5, matmul_v6, matmul_v7, matmul_v8]
+MATMUL_FUNCS = [matmul_v0, matmul_v1, matmul_v2, matmul_v3, matmul_v4, matmul_v5, matmul_v6, matmul_v7, matmul_v8, matmul_v9]
 
 N = 1000000
 VECT = np.linspace(0, 1, N)
-MSIZE = 500
+MSIZE = 200
 
 M1 = np.random.normal(np.zeros((MSIZE, MSIZE)))
 M2 = np.random.normal(np.zeros((MSIZE, MSIZE)))
