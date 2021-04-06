@@ -58,7 +58,7 @@ This notebook will work through those concepts:
 This notebook, the third in a series of notesbooks about python, also
 has many useful numpy tips:
 
-[Numpy and scipy section of python tutorial](./Python \(3\).ipynb)
+[Numpy and scipy section of python tutorial](./Python\ \(3\).ipynb)
 
 
 
