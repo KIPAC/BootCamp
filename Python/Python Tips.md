@@ -59,6 +59,10 @@ has many useful numpy tips:
 
 [Numerical and Scientific Python](./Python%20(3).ipynb)
 
+There are a number of tutorials about numpy available.  The one in the numpy documentation is excellent, so that is probably a good place to start:
+
+[Numpy Tutorial](https://numpy.org/doc/stable/user/quickstart.html)
+
 
 ## Code linters
 
@@ -72,7 +76,7 @@ those limitations.
 
 There are a number of python 'linters'.
 
-This unix-based demo will show how to use a couple of linters:
+This unix-based demo will show how to use some linters, specifically pylint, flake8 and autopep8.
 
 [Linting](./Linting.md)
 
