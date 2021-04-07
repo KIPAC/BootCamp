@@ -84,6 +84,9 @@ import pdb
 pdb.set_trace()
 ```
 
+Here is a nice cheat sheet for pdb:
+[pdf cheat sheet](https://kapeli.com/cheat_sheets/Python_Debugger.docset/Contents/Resources/Documents/index)
+
 I've actually already added them to the example so I don't have to edit the file while doing the demo.
 
 ```console
