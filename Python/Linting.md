@@ -104,6 +104,8 @@ xipe/worstCodeEver.py:9:40: W291 trailing whitespace
 ...
 ```
 
+### Code formatters.
+
 One thing that you will notice is that there are a lot of messages about formatting.  There are a few different tools that will automatically format
 code to standards.   One example is `black`
 
@@ -117,3 +119,5 @@ Your code has been rated at -6.00/10 (previous run: -6.00/10, +0.00)
 ```
 
 Ok, it is still terrible, but at least the formatting is ok.
+
+You can also get editor plugins to do the formatting for you, and if you are working in a python development environment, they can do a bunch besides.
