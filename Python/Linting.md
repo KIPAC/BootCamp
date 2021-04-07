@@ -86,7 +86,34 @@ If you haven't played around with a linter before, it is probably worth spending
 understand the reason behind the various error messages.
 
 
+### flake8
 
+flake8 is similar to pylint.   It seems to get a bit more use in automated code management tools, but it doesn't have the nice summary and the score to encourage you to do better.
 
+```console
+flake8 xipe/worstCodeEver.py
+xipe/worstCodeEver.py:2:1: F401 'argparse' imported but unused
+xipe/worstCodeEver.py:3:1: F401 'os' imported but unused
+xipe/worstCodeEver.py:4:1: F403 'from glob import *' used; unable to detect undefined names
+xipe/worstCodeEver.py:5:1: E302 expected 2 blank lines, found 0
+xipe/worstCodeEver.py:8:80: E501 line too long (84 > 79 characters)
+xipe/worstCodeEver.py:9:13: F401 'copy' imported but unused
+xipe/worstCodeEver.py:9:24: E261 at least two spaces before inline comment
+xipe/worstCodeEver.py:9:24: E262 inline comment should start with '# '
+xipe/worstCodeEver.py:9:40: W291 trailing whitespace
+...
+```
 
+One thing that you will notice is that there are a lot of messages about formatting.  There are a few different tools that will automatically format
+code to standards.   One example is `black`
 
+```console
+cp xipe/worstCodeEver.py xipe/worstCodeEver_copy.py     
+black xipe/worstCodeEver_copy.py
+pylint xipe/worstCodeEver_copy.py
+...
+--------------------------------------------------------------------
+Your code has been rated at -6.00/10 (previous run: -6.00/10, +0.00)
+```
+
+Ok, it is still terrible, but at least the formatting is ok.
