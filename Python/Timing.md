@@ -18,7 +18,7 @@ That is slower than expect, but maybe it taking time to load some libraries of a
 Let's time just code itself, using some code like this side the script.
 
 ```python
-	import time
+    import time
 
     t0 = time.time()
     main()
