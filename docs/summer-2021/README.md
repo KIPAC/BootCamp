@@ -13,9 +13,9 @@
 
 ### Lectures, tutorials and other sessions
 
-[Wed. 06/23 10-11:30am PDT](062321_Setup.md) Interactive session on getting your computer set up to start working, plus some Unix and python basics. 
+[Wed. 06/23 10-11:30am PDT](062321_Setup.md) Interactive session on getting your computer set up to start working, plus some Unix and python basics. [KIPAC calendar link](https://kipac.stanford.edu/events/computing-bootcamp)
 
-[Thurs. 06/24 10-11:30am PDT](062421_Python.md) More python and jupyter notebook basics
+[Thurs. 06/24 10-11:30am PDT](062421_Python.md) More python and jupyter notebook basics. [KIPAC calendar link](https://kipac.stanford.edu/events/computing-bootcamp-0)
 
 [Date & time TBD](coding_practice.md) Coding practice and software development
 
