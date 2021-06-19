@@ -6,7 +6,20 @@ You will need some way to manage files, connect to SLAC computers and
 open display windows.  Generally that will be a combination of using
 terminal windows and an X-windows systems for graphics.
 
-### Terminal
+### Terminal and Environment
+
+There are two primary approaches you can take here:
+- Do everything "natively" in Windows—this may be more straightforward, but may be a bit more difficult as you get to more advanced topics.
+- Use the Windows Subsystem for Linux—this takes a bit more work to setup, but will give you a development environment more similar to what is often used in labs (i.e., unix-based, as opposed to Windows).
+
+Both of these options are valid, but using the Windows Subsystem for Linux may make it easier to follow documentation in the future.
+
+#### Windows Terminal
+
+As of Build 2020, Microsoft has released [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/), which can be installed from the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
+Windows Terminal includes many modern terminal emulator features and is generally recommened over `cmd.exe`.
+
+#### Windows Subsystem for Linux
 
 As of Windows 10 build 14328 (released in 2016), it is now possible to set up a
 Unix-like terminal on Windows, using the following guide:
@@ -63,6 +76,8 @@ If you wish to use `emacs` instead, I recommend you install via your Linux termi
 The tools that you are most likely to need on your personal computer
 in order to do research "git", which is a file versioning system and
 "conda", which is a combination of python and a software package management system.
+
+Note that the following documentation assumes you are using the Linux shell via the Windows Subsystem for Linux.
 
 ### git
 
