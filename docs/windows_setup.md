@@ -117,11 +117,11 @@ and extra things, so you might want to install that version.
 
 #### Anaconda
 
-You can download anaconda from here:
+You can download the Linux version of anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
-I recommend installing anaconda under your home directory '~/Applications/'
+I recommend installing anaconda under your home directory '~/Applications/' or whevever is equivalent on your distribution.
 
 
 

@@ -82,7 +82,7 @@ and extra things, so you might want to install that version.
 
 #### Anaconda
 
-You can download anaconda from here:
+You can download the macOS version of anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
 

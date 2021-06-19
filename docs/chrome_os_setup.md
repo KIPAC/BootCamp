@@ -11,9 +11,9 @@ terminal windows and an X-windows systems for graphics.
 ### Linux
 
 To setup Linux on a Chromebook, follow the instructions [here](https://chromeos.dev/en/linux/setup).
-Note that this Linux system is based off of [Debian](https://www.debian.org/), a Linux distribution that is the basis for other distributions including Ubuntu.
+Note that this Linux container is based off of [Debian](https://www.debian.org/), a Linux distribution that is the basis for other distributions including Ubuntu.
 
-This Linux system includes a [Terminal](https://chromeos.dev/en/productivity/terminal) and includes support for the X Window System.
+This Linux container includes a [Terminal](https://chromeos.dev/en/productivity/terminal) and includes support for the X Window System.
 
 ### Text editor
 
@@ -80,12 +80,12 @@ and extra things, so you might want to install that version.
 
 #### Anaconda
 
-You can download anaconda from here:
+You can download the Linux version of anaconda from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
-I recommend installing anaconda under your home directory '~/Applications/'
-
+We haven't had time to verify this, but it sounds like you want to use `/usr/local/anaconda3` as the installation path.
+This may be different under Crostini.
 
 
 ##### Setting up anaconda for in a terminal window 
@@ -106,6 +106,8 @@ windows to activate conda for that terminal by doing this:
 You can download miniconda from there, (make sure to get the python 3 version):
 
 [minconda](https://docs.conda.io/en/latest/miniconda.html)
+
+Note that you will want the Linux version for compatability with the Linux container.
 
 If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 

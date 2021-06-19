@@ -68,7 +68,11 @@ and extra things, so you might want to install that version.
 
 #### Anaconda
 
-You can download anaconda from here:
+You can download the Windows version of anaconda from here:
+
+[anaconda (Windows)](https://docs.anaconda.com/anaconda/install/windows/)
+
+or the Linux version (if you are using the Windows Subsystem for Linux) from here:
 
 [anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
@@ -92,6 +96,8 @@ windows to activate conda for that terminal by doing this:
 You can download miniconda from there, (make sure to get the python 3 version):
 
 [minconda](https://docs.conda.io/en/latest/miniconda.html)
+
+If you are using the Windows Subsystem for Linux, you will want to get the Linux version of miniconda; otherwise, you will want the Windows version.
 
 If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 
