@@ -17,7 +17,7 @@ Both of these options are valid, but using the Windows Subsystem for Linux may m
 #### Windows Terminal
 
 As of Build 2020, Microsoft has released [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/), which can be installed from the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
-Windows Terminal includes many modern terminal emulator features and is generally recommened over `cmd.exe`.
+Windows Terminal includes many modern terminal emulator features and is generally recommened over `cmd.exe` or older solutions like [Cygwin](https://www.cygwin.com/).
 
 #### Windows Subsystem for Linux
 
