@@ -42,8 +42,6 @@ The tools that you are most likely to need on your personal computer
 in order to do research "git", which is a file versioning system and
 "conda", which is a combination of python and a software package management system.
 
-Note that the following documentation assumes you are using the Linux shell via the Windows Subsystem for Linux.
-
 ### git
 
 git is a versioning system that is pretty ubiquitous in our
