@@ -126,6 +126,19 @@ let you run jupyter notebooks locally.
 
 (The lines that start with '#' are comments.)
 
+Alternatively, you can run
+
+    conda env create -f kipac-env.yaml
+	conda activate kipac
+
+to create and activate an environment named `kipac` that has been prepared in advance.
+
+Note that you will need to run
+
+    conda activate kipac
+
+each time you begin a new session (i.e., open a terminal).
+
 ### Running a notebook
 
 If you want to start a notebook you can then do:
