@@ -2,6 +2,8 @@
 
 There are a number of common Linux distributions and it would be difficult to cover all of them here.
 In general, these will be based off of Debian, Red Hat, or Arch, the primary difference (for these purposes) being the package manager of each respective distribution—APT, DNF, and pacman, respectively.
+This documentation will frequently refer to the [ArchWiki](https://wiki.archlinux.org/); while, in principle, it is specific to Arch Linux, it includes information that is highly useful to all Linux users.
+In most cases, you can substitute commands with your distribution's proper package manager with success.
 
 ## Basic tools
 
