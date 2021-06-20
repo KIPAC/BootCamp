@@ -17,7 +17,7 @@ Each Linux distribution typically comes with a terminal emulator via their deskt
 
 For a comprehensive list of terminal emulators in Linux, see the [ArchWiki](https://wiki.archlinux.org/title/List_of_applications#Terminal_emulators).
 
-### X Windows system (X-Quartz)
+### X Windows system
 
 The X Windows system is a very common way to open connections to and send graphics from processes running on remote computers.
 While some Linux distributions are moving towards [Wayland](https://wayland.freedesktop.org/), many scientific applications rely on X to render graphics.
