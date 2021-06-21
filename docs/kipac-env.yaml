@@ -1,0 +1,15 @@
+name: kipac
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - numpy
+    - pandas
+    - scipy
+    - matplotlib
+    - astropy
+    - healpy
+    - jupyter
+    - emcee
+    - corner
+    - pyyaml

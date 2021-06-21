@@ -1,4 +1,9 @@
-# Setting up a Mac computer to use for research
+# Setting up a Linux computer to use for research
+
+There are a number of common Linux distributions and it would be difficult to cover all of them here.
+In general, these will be based off of Debian, Red Hat, or Arch, the primary difference (for these purposes) being the package manager of each respective distribution—APT, DNF, and pacman, respectively.
+This documentation will frequently refer to the [ArchWiki](https://wiki.archlinux.org/); while, in principle, it is specific to Arch Linux, it includes information that is highly useful to all Linux users.
+In most cases, you can substitute commands with your distribution's proper package manager with success.
 
 ## Basic tools
 
@@ -8,36 +13,24 @@ terminal windows and an X-windows systems for graphics.
 
 ### Terminal
 
-The simplest command line environment on a mac is the built in terminal (Applications -> Utilities -> Terminal)
+Each Linux distribution typically comes with a terminal emulator via their desktop environment; e.g., most installations of Ubuntu and Fedora use the [GNOME](https://www.gnome.org/) desktop environment which includes the [GNOME Terminal](https://help.gnome.org/users/gnome-terminal/stable/).
 
-Here are a couple of simple guides for using terminals:
+For a comprehensive list of terminal emulators in Linux, see the [ArchWiki](https://wiki.archlinux.org/title/List_of_applications#Terminal_emulators).
 
-[MacPaw guide](https://macpaw.com/how-to/use-terminal-on-mac)
+### X Windows system
 
-[Macworld guide](https://www.macworld.co.uk/how-to/mac-software/how-use-terminal-on-mac-3608274)
-
-You can explore those more later.  For now you just need to be able to
-open an terminal 
-
-
-### X Windows system (X-Quartz)
-
-The X Windows system is a very common way to open connections to and send graphics from processes running on remote computers.   It is generically useful and
-we recommend you install it if you are using a mac laptop.
-
-[X Quartz](https://www.xquartz.org)
+The X Windows system is a very common way to open connections to and send graphics from processes running on remote computers.
+While some Linux distributions are moving towards [Wayland](https://wayland.freedesktop.org/), many scientific applications rely on X to render graphics.
+If X is not already installed on your system via, e.g., [Xorg](https://www.x.org/wiki/), it is recommended that you do so.
+If you are using Wayland, compatability is available through [XWayland](https://wayland.freedesktop.org/xserver.html); see the [ArchWiki](https://wiki.archlinux.org/title/Wayland#XWayland).
 
 
 ### Text editor
 
-You are going to need some way to edit files.   I strongly recommend
-that you do not use "TextEdit" to try and edit software files.
+Any distribution of Linux will typically come with a text editor (if not just `vi` or even `ed`).
+For a comprehensive list of text editors on Linux, see the [ArchWiki](https://wiki.archlinux.org/title/List_of_applications#Text_editors).
 
-There are many different options, here is a summary of some of your
-choices:
-
-[Text Editors](text_editors.md)
-
+Consider [Text Editors](text_editors.md) for a brief overview of some of the more common text editors.
 
 ## Other Tools
 
@@ -52,23 +45,16 @@ work.  It lets many users work together to manage a large set of
 files.  This can be set of software, or a paper draft, or some
 documentation, or pretty much any kind of files. 
 
-I recommend using the instructions under using "Install Git Using
-Xcode" on the page below:
-
-[Installation](https://phoenixnap.com/kb/install-git-on-mac)
+See the [ArchWiki](https://wiki.archlinux.org/title/Git) for an overview.
 
 [Documentation](https://xkcd.com/1597)
 
-Running the following command in a terminal window will setup git and
-use it to "clone" this BootCamp:
+Run the following command to "clone" this repository from GitHub onto your computer:
 
-    # Install xcode and git if you have not already done so
-    xcode-select --install
     # "Clone" this repository into a directory called "BootCamp" 
 	git clone https://github.com/KIPAC/BootCamp.git
 
 (The lines that start with '#' are comments.)
-   
 
 ### Anaconda or Miniconda and Jupyter Notebooks
 
@@ -82,17 +68,15 @@ and extra things, so you might want to install that version.
 
 #### Anaconda
 
-You can download the macOS version of anaconda from here:
+You can download the Windows version of anaconda from here:
 
-[anaconda](https://docs.anaconda.com/anaconda/install/mac-os/)
+[anaconda (Windows)](https://docs.anaconda.com/anaconda/install/windows/)
 
-I recommend installing anaconda under '/Applications'.
+or the Linux version (if you are using the Windows Subsystem for Linux) from here:
 
-Then you can do Applications -> Anaconda-Navigator
+[anaconda](https://docs.anaconda.com/anaconda/install/linux/)
 
-Then, in the "Home" tab of  Anaconda-Navigator you can select "Launch" 
-in the "Notebook" app box.  This will start a local notebook servers
-and open a web-browser window in your home directory.
+I recommend installing anaconda under your home directory '~/Applications/'
 
 ##### Setting up anaconda for in a terminal window 
 
@@ -100,7 +84,7 @@ Once you have installed anaconda you can also set up your terminal
 windows to activate conda for that terminal by doing this:
 
     # Activate conda
-    . /Applications/anaconda3/etc/profile.d/conda.sh
+    . ~/Applications/anaconda3/etc/profile.d/conda.sh
     # "Activate" the "base" conda environment
 	conda activate
 
@@ -112,6 +96,8 @@ windows to activate conda for that terminal by doing this:
 You can download miniconda from there, (make sure to get the python 3 version):
 
 [minconda](https://docs.conda.io/en/latest/miniconda.html)
+
+If you are using the Windows Subsystem for Linux, you will want to get the Linux version of miniconda; otherwise, you will want the Windows version.
 
 If you go the route of installing miniconda there are a number of packages, such as jupyter notebooks that you will likely need to install.
 
@@ -143,9 +129,10 @@ Note that you will need to run
 
 each time you begin a new session (i.e., open a terminal).
 
+
 ### Running a notebook
 
-f you want to start a notebook you can then do:
+If you want to start a notebook you can then do:
 
     # Start a notebook server in the current directory that you are in 
     jupyter notebook 
