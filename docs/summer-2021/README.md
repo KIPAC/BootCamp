@@ -10,6 +10,9 @@
 
 [Students only Slack Channel](https://KIPAC.slack.com/messages/summer-students)
 
+### Things to do ahead of time
+The [page for Wednesday's session](062321_Setup.md) has some resources and instructions for getting your computer set up for scientific computing. Look at that page, and try follow the "Stuff to do ahead of time" instructions listed there before the first python bootcamp session. If you run into problems, don't hesitate to ask for help on slack!
+
 
 ### Lectures, tutorials and other sessions
 
