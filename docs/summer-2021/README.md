@@ -6,6 +6,8 @@
 
 [Lightning talk prep session signups](https://docs.google.com/spreadsheets/d/1gXpkkePg-ZEikMkkPH5I6xGIi4tCRsGPbTW3icG3fuM/edit?usp=sharing) - Please sign up for a slot here! If you started the week of June 14, you're enouraged to sign up for the earlier timeslots, to give your colleagues who started on June 21 a little more time to settle in before preparing their presentations. 
 
+[Lightning talk slide deck](https://docs.google.com/presentation/d/1Fh4qTumVxBjQfoLfhf5IL1LcqkheJtf-lBriIZFXrDs/edit?usp=sharing) - This includes a couple example slides from last year.
+
 [Students and mentors Slack Channel](https://KIPAC.slack.com/messages/summer-students-plus-mentors)
 
 [Students only Slack Channel](https://KIPAC.slack.com/messages/summer-students)
