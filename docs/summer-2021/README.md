@@ -10,7 +10,7 @@
 
 [Students and mentors Slack Channel](https://kipac-group.slack.com/archives/C015E6823FX)
 
-[Students only Slack Channel]() (broken) updating links now to new KIPAC slack workspace!
+[Students only Slack Channel](https://kipac-group.slack.com/archives/C0158RBP5K8) 
 
 ### Things to do ahead of time
 The [page for Wednesday's session](062321_Setup.md) has some resources and instructions for getting your computer set up for scientific computing. Look at that page, and try follow the "Stuff to do ahead of time" instructions listed there before the first python bootcamp session. If you run into problems, don't hesitate to ask for help on slack!
