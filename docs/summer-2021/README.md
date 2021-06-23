@@ -8,9 +8,9 @@
 
 [Lightning talk slide deck](https://docs.google.com/presentation/d/1Fh4qTumVxBjQfoLfhf5IL1LcqkheJtf-lBriIZFXrDs/edit?usp=sharing) - This is the slide deck we'll use during lightning talk presentations, so use these slides as a template when making yours. You can either create your slide in this google slides deck, or make it in your own document and copy it over when you are ready. This includes a couple example slides from last year.
 
-[Students and mentors Slack Channel](https://KIPAC.slack.com/messages/summer-students-plus-mentors)
+[Students and mentors Slack Channel](https://kipac-group.slack.com/archives/C015E6823FX)
 
-[Students only Slack Channel](https://KIPAC.slack.com/messages/summer-students)
+[Students only Slack Channel]() (broken) updating links now to new KIPAC slack workspace!
 
 ### Things to do ahead of time
 The [page for Wednesday's session](062321_Setup.md) has some resources and instructions for getting your computer set up for scientific computing. Look at that page, and try follow the "Stuff to do ahead of time" instructions listed there before the first python bootcamp session. If you run into problems, don't hesitate to ask for help on slack!
